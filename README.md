@@ -12,3 +12,9 @@ directX rendering deactivated for the console. VR is removed and all physics obj
 
 To be tried with the Void Expanse draft for the 9sMODs Invasion series: 
 
+https://drive.google.com/file/d/1VefBUM3YC4zeJGGVyN_aS5DzZYOJneAH/view?usp=sharing
+
+https://www.youtube.com/watch?v=bw1XpB2OBKg&ab_channel=SteveChass%C3%A9
+
+https://www.youtube.com/watch?v=ue9NcV2POXk&ab_channel=SteveChass%C3%A9
+
