@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<header>
+		<id>planet_earth_night</id>
+		<title>(Unused)</title>
+		<description></description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>decorations/planet_earth/planet_earth_night.obj</model>
+		<textures>
+			<diffuse>decorations/planet_earth_night/diff_1024.jpg</diffuse>
+			<specular>decorations/planet_earth_night/spec_1024.jpg</specular>
+			<normal>decorations/planet_earth_night/norm_1024.jpg</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+</root>

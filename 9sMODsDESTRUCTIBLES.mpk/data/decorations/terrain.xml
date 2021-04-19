@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<header>
+		<id>terrain</id>
+		<title>(Unused)</title>
+		<description></description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>decorations/terrain.obj</model>
+		<textures>
+			<diffuse>decorations/terrain/dif_512.jpg</diffuse>
+			<specular>decorations/terrain/spec_512.jpg</specular>
+			<normal>decorations/terrain/nrm_512.jpg</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+</root>

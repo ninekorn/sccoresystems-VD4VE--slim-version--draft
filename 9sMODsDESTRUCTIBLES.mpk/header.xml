@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+  <game>VoidExpanse</game>
+  <id>9sMODsDESTRUCTIBLES</id>
+  <title>9sMODs part 2.3.2 of 9.0</title>
+  <author>Ninekorn</author>
+  <description>Ability to rebuild turrets at stations with a cost depending on the danger level of the system and Tech Level of the station.
+Ability to spawn both Combat and Repair Drones and Mining Drones
+Including the Galaxy Market.
+Ability to access the Galaxy Market and to spawn drones from the OnBoard Ship Computer that you can get at any stations.
+
+Fixed a few bugs:
+1. The drone faction was non-existent and was showing as a red square instead of "Neutrals". Fixed it.
+2. The mining drone AI wasnt working when the drone started mining and that the player was getting 25 units away, the mining drone was going back and forth to the last asteroid and back to the player infinitely. Now fixed easily.
+3.Cleaned the Title of the drones that show up in the store so that they don't include the character "_" (underscore).
+4. I had forgotten to add the option to select a mining drone to go back to player to deposit its cargo but the option was there in the onBoard Computer. Now the option is added and works perfectly.
+</description>
+  <version>2.3.2</version>
+  <min_game_version>0.0.0</min_game_version>
+  <required_for_loading_savegame>1</required_for_loading_savegame>
+  <updated>02-07-2021</updated>
+  <modtype>2</modtype>
+  <tags>Gameplay,Hulls,Items</tags>
+</root>

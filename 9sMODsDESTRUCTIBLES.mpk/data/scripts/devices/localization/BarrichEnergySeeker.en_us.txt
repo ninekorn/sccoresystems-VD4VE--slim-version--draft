@@ -1,0 +1,6 @@
+﻿$n0001:       The device can't detect any signs of Nharmarian energy sources in this star system.
+$n0002:       
+$n0003:       The device can't detect any signs of Nharmarian energy sources in this star system.
+$n0004:       
+$n0005:       
+$n0006:       Distance to Nharmarian energy source: %length%

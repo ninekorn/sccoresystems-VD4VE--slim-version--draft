@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>outpost_01_bottom_shield_0</id>
+		<title>outpost_01_bottom_shield_0</title>
+		<description>(Unused)</description>
+		<enabled>1</enabled>
+	</header>
+
+	<data>
+
+		<avatar_image>avatars/unique/terminal_01.png</avatar_image>
+	
+		<flags>
+			<flag>turret</flag>
+		</flags>
+
+		<hull>outpost_01_bottom_shield_0</hull>
+
+		<consumables>
+		</consumables>
+
+		<devices>
+		</devices>
+
+		<weapons>
+			<weapon>
+				<slot>0</slot>
+				<weapon>weapon_invisible</weapon>
+			</weapon>
+		</weapons>
+
+		<drop_crate>crate_01</drop_crate>
+
+		<drop_list>
+			<drop>droplist_generic_ships_01</drop>
+		</drop_list>
+		
+		<effects>
+			<effect>
+				<effect_type>structure_percent</effect_type>
+				<effect_base>300</effect_base>
+			</effect>
+						<effect>
+				<effect_type>shield_charge_percent</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+		
+			<effect>
+				<effect_type>shield_reestablishment_value</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+			<effect>
+				<effect_type>shield_regeneration_delay_value</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+			<effect>
+				<effect_type>shield_regeneration_percent</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+			<effect>
+				<effect_type>shield_regeneration_value</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+			<effect>
+				<effect_type>hull_regeneration_value</effect_type>
+				<effect_base>5</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_self_special</effect_type>
+				<effect_base>-0.5</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_target_special</effect_type>
+				<effect_base>0.25</effect_base>
+			</effect>
+		</effects>
+
+	</data>
+</root>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>station_platform_repair_315</id>
+		<title>(Unused)</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/station_platform_repair_315.obj</model>
+		<textures>
+			<diffuse>space_objects/platform_repair/dif_2048.jpg</diffuse>
+			<normal>space_objects/platform_repair/nrm_2048.jpg</normal>
+			<specular>space_objects/platform_repair/spec_2048.jpg</specular>
+		</textures>
+	</gfx>
+
+	<sfx>
+		<!-- none-->
+	</sfx>
+
+	<data>
+		<scale_range>1;1</scale_range>
+		<rotation_range>0;0</rotation_range>
+
+		<depth>0</depth>
+		
+		<!-- Determines when to show the activation button.
+			 Interaction types: 
+				1 = when point with cursor
+				2 = when the ship reach activation zone (circle determined by radius) -->
+		<interaction_type>2</interaction_type>
+		<interaction_radius>3.5</interaction_radius>
+				
+		<!-- (optional) script definition for this special object, must be a valid filename -->
+		<script>platform_repair.js</script>
+		
+		<custom_map_icon>platform_repair</custom_map_icon>
+		
+		<physics>
+			<mass>9001</mass>
+			<shapes>
+<shape>
+    <type>circle</type>
+    <offset>-2;0</offset>
+    <angle>0</angle>
+    <radius>0.7</radius>
+    <mass>1</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>0;-2</offset>
+    <angle>0</angle>
+    <radius>0.7</radius>
+    <mass>1</mass>
+  </shape>
+			</shapes>
+		</physics>
+
+	</data>
+</root>

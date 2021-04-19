@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>SCdestroyedAuroraParts01-0</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/destroyed_hulls/aurora/SCdestroyedAuroraParts01-0.obj</model>
+		<textures>
+			<diffuse>space_objects/destroyed_hulls/aurora/SCdestroyedAuroraParts01-0.png</diffuse>
+			<specular>space_objects/destroyed_hulls/aurora/SCdestroyedAuroraParts01-0.png</specular>
+			<normal>space_objects/destroyed_hulls/aurora/SCdestroyedAuroraParts01-0.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+	<data>
+		
+			<scale_range>1.0;1.0</scale_range>
+		
+			<rotation_range>-1.0;1.0</rotation_range>
+		
+			<physics>
+				<mass>6.5</mass>
+				<shapes>
+<shape>
+    <type>box</type>
+    <offset>-0.07;0.1</offset>
+    <angle>0</angle>
+    <size>0.65;0.5</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0.425;-0.2</offset>
+    <angle>75</angle>
+    <size>0.4;0.065</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0.28;-0.175</offset>
+    <angle>25</angle>
+    <size>0.35;0.1</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0.375;0.1</offset>
+    <angle>85</angle>
+    <size>0.75;0.065</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0.175;0.35</offset>
+    <angle>-25</angle>
+    <size>0.35;0.1</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>0.1;0.375</offset>
+    <angle>0</angle>
+    <radius>0.125</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>0.29;-0.275</offset>
+    <angle>0</angle>
+    <radius>0.125</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>0.125;-0.15</offset>
+    <angle>0</angle>
+    <radius>0.125</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.225;0.1</offset>
+    <angle>50</angle>
+    <size>0.4;0.425</size>
+    <mass>8</mass>
+  </shape>
+				</shapes>
+			</physics>
+	</data>
+</root>

@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>mining_01_225</id>
+		<title>Mining station</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>stations/mining_01.obj</model>
+		<textures>
+			<diffuse>stations/mining_01/dif_1024.png</diffuse>
+			<normal>stations/mining_01/nrm_1024.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>225</rotation>
+	</gfx>
+
+	<sfx>
+		<!-- none -->
+	</sfx>
+
+	<data>
+
+		<playlist>playlist_special_station_mining</playlist>
+
+		<background_texture>stations/hangar_01.jpg</background_texture>
+
+		<sort>500</sort>
+		
+		<storage_capacity>1500</storage_capacity>
+
+		<stock_generation>
+			<!-- hulls -->
+			<group>
+				<min>3</min>
+				<max>5</max>
+				<items>
+					<item>
+						<type>1</type>
+						<min>3</min>
+						<max>5</max>
+					</item>
+				</items>
+			</group>
+			<!-- primary equipment -->
+			<group>
+				<min>5</min>
+				<max>15</max>
+				<items>
+					<item>
+						<type>2</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>3</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>4</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>5</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>6</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>7</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>8</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+				</items>
+			</group>
+			<!-- secondary equipment -->
+			<group>
+				<min>8</min>
+				<max>12</max>
+				<items>
+					<item>
+						<type>9</type>
+						<min>0</min>
+						<max>10</max>
+					</item>
+					<item>
+						<type>10</type>
+						<min>0</min>
+						<max>10</max>
+					</item>
+				</items>
+			</group>
+			<!-- weapons -->
+			<group>
+				<min>5</min>
+				<max>10</max>
+				<items>
+					<item>
+						<type>11</type>
+						<min>5</min>
+						<max>10</max>
+					</item>
+				</items>
+			</group>
+			<!-- consumables -->
+			<group>
+				<min>3</min>
+				<max>5</max>
+				<items>
+					<item>
+						<type>101</type>
+						<min>3</min>
+						<max>5</max>
+					</item>
+				</items>
+			</group>
+			<!-- objects -->
+			<group>
+				<min>1</min>
+				<max>10</max>
+				<items>
+					<item>
+						<type>100</type>
+						<min>2</min>
+						<max>7</max>
+					</item>
+				</items>
+			</group>
+		</stock_generation>
+
+		<entrance>
+			<entry_available_areas>
+				<shape>
+    <type>box</type>
+    <offset>0;0</offset>
+    <angle>0</angle>
+    <size>2;2</size>
+  </shape>
+			</entry_available_areas>
+			<entry_start_areas>
+				<shape>
+    <type>box</type>
+    <offset>0;0</offset>
+    <angle>0</angle>
+    <size>2;2</size>
+  </shape>
+			</entry_start_areas>
+
+			<undocking_points>
+				<point>0;3</point>
+				<point>3;0</point>
+				<point>3;3</point>
+				<point>-3;0</point>
+				<point>-3;3</point>
+				<point>-3;3</point>
+			</undocking_points>
+		</entrance>
+
+		<physics>
+			<mass>9001</mass>
+			<shapes>
+ <shape>
+    <type>box</type>
+    <offset>-8.000;0.100</offset>
+    <angle>315</angle>
+    <size>7.650;2.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>7.000;-0.650</offset>
+    <angle>40</angle>
+    <size>6.000;1.750</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>7.850;-0.975 7.850;1.000 8.675;2.75 9.515;3.900 11.900;1.450 11.900;-0.49</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>7.600;3.650 7.600;4.500 8.350;5.250 9.500;3.900 8.6;2.65</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>8.600;13.400 7.99;14.75 11.900;17.785 11.900;14.500 9.500;12.000</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>8.300;10.850 7.5;11.65 7.5;12.4 8.55;13.450 9.49;12.000</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>-4.500;7.000 -5.150;7.650 -5.150;8.350 -4.500;9.000 5.150;9.000 5.850;8.350 5.850;7.650 5.250;7.000</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.000;-2.250</offset>
+    <angle>0</angle>
+    <size>12.000;2.250</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-10.450;8.000</offset>
+    <angle>0</angle>
+    <size>1.850;12.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>-8;16.000</offset>
+    <angle>0</angle>
+    <points>-3.05;-2.100 1.850;3.650 3;1.65 -1.500;-2.950</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>10.000;20.000</offset>
+    <angle>0</angle>
+    <points>-5.100;-2.600 -4.700;-1.000 -2;0.45 1.800;0.45 1.900;-2.200 -2.000;-5.200</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>17.750;20.200</offset>
+    <angle>0</angle>
+    <size>13.000;1.150</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>17.750;-4.000</offset>
+    <angle>0</angle>
+    <size>13.000;1.150</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>9.000;-2.000</offset>
+    <angle>0</angle>
+    <points>-3.150;-1.350 -3.000;0.000 -1.250;1.000 2.900;1.500 2.900;-1.500 2.350;-2.600</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>-15.000;20.000</offset>
+    <angle>0</angle>
+    <points>1;-9.500 -2.750;-10.450 -6.350;-9.000 -8.850;-5.750 -11.750;-1.000 -11.650;3.500 5.000;4.990 8.8;-0.35</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>-15.000;30.000</offset>
+    <angle>0</angle>
+    <points>-11.700;-6.500 -12.000;-6.000 -11.500;-0.500 -9.750;4.500 -8.750;5.49 5.000;4.99 5.000;-5.000</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>-15.000;40.000</offset>
+    <angle>0</angle>
+    <points>-8.750;-4.500 -8.150;-3.150 3.99;9.250 10.99;2.000 5.000;-5.000</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;45.000</offset>
+    <angle>0</angle>
+    <points>-4.000;-3.000 -11.000;4.250 -8.250;5.250 -6.250;5.850 13.250;5.850 13.250;4.14 1.99;-2.000</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>15.000;40.000</offset>
+    <angle>0</angle>
+    <points>-5.000;-4.99 -13.000;3.000 -2.000;9.000 0.000;9.000 11.000;-0.400</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>17.000;30.000</offset>
+    <angle>0</angle>
+    <points>-7;5 8.850;9.55 11.250;5.000 11.650;2.500 11.350;-1.000 9.850;-5.000 6.500;-9.500 -9.000;-9.500</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>16.900;8.000</offset>
+    <angle>0</angle>
+    <size>0.450;5.400</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>17.200;11.000</offset>
+    <angle>315</angle>
+    <size>0.450;1.100</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>17.200;5.150</offset>
+    <angle>45</angle>
+    <size>0.450;1.100</size>
+    <mass>8</mass>
+  </shape>
+
+
+			</shapes>
+		</physics>
+	</data>
+</root>

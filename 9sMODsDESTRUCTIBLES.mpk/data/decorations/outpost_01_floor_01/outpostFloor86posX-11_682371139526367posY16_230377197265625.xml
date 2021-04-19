@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>outpostFloor86posX-11_682371139526367posY16_230377197265625</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>decorations/outpost_01_floor_01/outpostFloor86posX-11_682371139526367posY16_230377197265625.obj</model>
+		<textures>
+			<diffuse>decorations/outpost_01_floor_01/outpostFloor86posX-11_682371139526367posY16_230377197265625.png</diffuse>
+			<specular>decorations/outpost_01_floor_01/outpostFloor86posX-11_682371139526367posY16_230377197265625.png</specular>
+			<normal>decorations/outpost_01_floor_01/outpostFloor86posX-11_682371139526367posY16_230377197265625.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+</root>

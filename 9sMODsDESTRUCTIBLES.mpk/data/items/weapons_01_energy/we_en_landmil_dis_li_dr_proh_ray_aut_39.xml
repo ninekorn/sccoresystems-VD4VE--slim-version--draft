@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <header>
+    <id>we_en_landmil_dis_li_dr_proh_ray_aut_39</id>
+    <title> This is an Energy Weapon from the landmilitia.</title>
+    <description>Energy Weapon</description>
+    <enabled>1</enabled>
+  </header>
+  <gfx>
+    <icon>items/weapons_01_energy/we_en_landmil_dis_li_dr_proh_ray_aut_39.jpg</icon>
+  </gfx>
+  <data>
+    <type>11</type>
+    <shops>
+      <shops_level>1</shops_level>
+      <faction_filter />
+      <faction_only>0</faction_only>
+      <faction_reputation>0</faction_reputation>
+      <price>0</price>
+    </shops>
+    <flags>
+      <flag />
+    </flags>
+    <upgrades>&lt;!-- none --&gt;</upgrades>
+    <upgrades_max>0</upgrades_max>
+    <requirements>&lt;!-- none --&gt;</requirements>
+    <effects>&lt;!-- none --&gt;</effects>
+    <item_data>
+      <durability>25000</durability>
+      <gfx>
+        <model>turrets/energy_turret_01.obj</model>
+        <textures>
+          <diffuse>turrets/energy_turret_01/we_en_landmil_dis_li_dr_proh_ray_aut_39.jpg</diffuse>
+          <normal>turrets/energy_turret_01/nrm_256_bw.png</normal>
+          <specular>turrets/energy_turret_01/spec_256.png</specular>
+        </textures>
+      </gfx>
+      <sfx>
+        <on_prepare />
+        <on_complete />
+        <on_recharge>items/generic_on_recharge.ogg</on_recharge>
+        <on_empty>items/generic_on_empty.ogg</on_empty>
+        <on_not_ready>items/generic_on_not_ready.ogg</on_not_ready>
+      </sfx>
+      <weapon>
+        <durability_per_shot>1</durability_per_shot>
+        <weapon_type>1</weapon_type>
+        <weapon_size>1</weapon_size>
+        <fire_sequence_delay_sec>10</fire_sequence_delay_sec>
+        <fire_sequence_energy>0</fire_sequence_energy>
+        <ammo_max>1728</ammo_max>
+        <ammo_per_shot>1</ammo_per_shot>
+        <ammo_recharge_sec>0.2</ammo_recharge_sec>
+        <ammo_recharge_energy>1</ammo_recharge_energy>
+        <ammo_auto_recharge_at_station>1</ammo_auto_recharge_at_station>
+        <ammo_recharge_price>0</ammo_recharge_price>
+        <ammo_meter>2</ammo_meter>
+      </weapon>
+      <projectiles>
+        <projectile>
+          <quantity>1</quantity>
+          <sfx>
+            <on_prepare>items/laser_on_prepare.ogg</on_prepare>
+            <on_complete>items/laser_on_complete.ogg</on_complete>
+            <on_shoot>items/laser_on_shoot.ogg</on_shoot>
+            <on_hit_body>items/laser_on_hit_body.ogg</on_hit_body>
+            <on_hit_shield>items/laser_on_hit_shield.ogg</on_hit_shield>
+          </sfx>
+          <gfx>
+            <ray>
+              <width>0.65</width>
+              <textures>
+                <textures>
+                  <diffuse>projectiles/beam_ray.png</diffuse>
+                  <color>1;0.50;0.15;1</color>
+                  <speed>1</speed>
+                </textures>
+                <textures>
+                  <diffuse>projectiles/beam_fx.png</diffuse>
+                  <color>1;0.50;0.15;1</color>
+                  <speed>0.5</speed>
+                </textures>
+              </textures>
+              <particles>
+                <particle>
+                  <color>1;0.3;0.5;1</color>
+                  <density>5</density>
+                  <size>0.2</size>
+                  <diffuse>projectiles/particle_01.png</diffuse>
+                </particle>
+              </particles>
+            </ray>
+            <particle_hit_body>
+              <color>1;1;1;1</color>
+              <density>1</density>
+            </particle_hit_body>
+            <particle_hit_shield>
+              <color>0.2;0.5;1;1</color>
+              <density>1</density>
+            </particle_hit_shield>
+            <muzzle_flash_sprite>
+              <width>0.33</width>
+              <height>0.33</height>
+              <textures>
+                <diffuse>projectiles/muzzle_flash_02_laser.png</diffuse>
+                <color>1;0.25;0.15;1</color>
+              </textures>
+              <flash_origin>0.161;0;0</flash_origin>
+            </muzzle_flash_sprite>
+            <fire_origin>0.241;0.000;0.000</fire_origin>
+          </gfx>
+          <cancel>0</cancel>
+          <shot_delay>0</shot_delay>
+          <angle>0</angle>
+          <spread>0</spread>
+          <dmg>10</dmg>
+          <dmg_type>1</dmg_type>
+          <distance>6</distance>
+          <max_distance>14</max_distance>
+          <impulse>0</impulse>
+          <projectile_type>2</projectile_type>
+          <duration>1</duration>
+          <duration_prepare>0.1</duration_prepare>
+          <duration_complete>0.1</duration_complete>
+          <homing>0</homing>
+          <speed>0</speed>
+          <radius>0</radius>
+          <max_radius>0</max_radius>
+        </projectile>
+      </projectiles>
+    </item_data>
+  </data>
+</root>

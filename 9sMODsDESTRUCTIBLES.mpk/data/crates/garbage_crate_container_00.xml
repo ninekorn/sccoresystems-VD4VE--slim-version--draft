@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>garbage_crate_container_00</id>
+		<title>Crate</title>
+		<description></description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>crates\garbage_container/garbage_crate_container_00.obj</model>
+		<textures>
+			<diffuse>crates\garbage_container/garbage_crate_container_00.png</diffuse>
+			<normal>crates\garbage_container/garbage_crate_container_00.png</normal>
+			<specular>crates\garbage_container/garbage_crate_container_00.png</specular>
+		</textures>
+
+	</gfx>
+
+	<sfx>
+		<!-- none-->
+	</sfx>
+
+	<data>
+		<scale_range>1;1</scale_range>
+
+		<movable>0</movable>
+		<persistent>1</persistent>
+		<instanced>0</instanced>
+		<show_on_map>0</show_on_map>
+	
+		<physics>
+			<mass>40</mass>
+			<shapes>
+				<shape>
+    <type>box</type>
+    <offset>0.25;0.19</offset>
+    <angle>0</angle>
+    <size>0.1;0.75</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0.25;0.19</offset>
+    <angle>0</angle>
+    <size>0.1;0.75</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0;0.515</offset>
+    <angle>0</angle>
+    <size>0.4;0.1</size>
+    <mass>8</mass>
+  </shape>
+			</shapes>
+		</physics>
+
+	</data>
+</root>

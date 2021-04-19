@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>asteroid_06_lava</id>
+		<title>Molten asteroid</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>asteroids/asteroid_06.obj</model>
+		<textures>
+			<diffuse>asteroids/lava_01/dif_256.jpg</diffuse>
+			<specular>asteroids/lava_01/spec_256.jpg</specular>
+			<normal>asteroids/lava_01/nrm_256.jpg</normal>
+			<illumination>asteroids/lava_01/ilum_256.jpg</illumination>
+		</textures>
+		<texture_mining_particle>asteroids/mining_particle_lava_01.png</texture_mining_particle>
+	</gfx>
+
+	<sfx>
+		<!-- sound info for different actions -->
+	</sfx>
+
+	<data>
+		<scale_range>0.75;1.25</scale_range>
+		<rotation_range>-1.0;1.0</rotation_range>
+
+		<physics>
+			<mass>2000</mass>
+			<shapes>
+				<shape>
+					<type>polygon</type>
+					<offset>0;0</offset>
+					<angle>0</angle>
+					<points>-0.972;0.4868 -0.173;0.6034 0.859;0.1799 0.916;-0.3596 0.023;-0.6859 -0.525;-0.5245 -1.007;0.0380</points>
+				</shape>
+			</shapes>
+		</physics>
+
+		<type>1</type>
+		<difficulty>1500</difficulty>
+		<!-- how long will it take to mine asteroid -->
+
+		<contents>
+			<resource>
+				<id>ore_cyactite</id>
+				<quantity>200;400</quantity>
+				<extraction>2</extraction>
+			</resource>
+			<resource>
+				<id>ore_fraclasite</id>
+				<quantity>80;120</quantity>
+				<extraction>5</extraction>
+			</resource>
+			<resource>
+				<id>ore_mangkolite</id>
+				<quantity>30;70</quantity>
+				<extraction>5</extraction>
+			</resource>
+			<resource>
+				<id>ore_serizonite</id>
+				<quantity>40;60</quantity>
+				<extraction>1</extraction>
+			</resource>
+
+
+		</contents>
+
+	</data>
+</root>

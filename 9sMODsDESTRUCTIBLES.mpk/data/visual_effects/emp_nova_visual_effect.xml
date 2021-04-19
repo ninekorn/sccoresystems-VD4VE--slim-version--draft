@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>emp_nova_visual_effect</id>
+		<enabled>1</enabled>
+	</header>
+	<data>
+	
+		<nova>
+			<delay>0</delay> <!-- delay of nova appear after effect start (useful for sequenced novas)-->
+			<duration>0.7</duration> <!-- total duration of effect -->
+			<max_radius>43</max_radius> <!-- radius of nova at the end of duration -->
+			<density>1.2</density> <!-- density of texture placement -->
+			<length>33</length> <!-- radial length if nova ring -->
+			<fadeout_time>1.55</fadeout_time> <!-- for how long nova should be fading out (0 - to disable fade out at all)-->
+			<texture>effects/nova_01.png</texture>
+		</nova>
+		
+	</data>
+</root>

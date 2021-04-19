@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>xml_outpostOuterRoboticArmLow0posX0_1419147551059723posY-22_99178123474121</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<data>
+		<avatar_image>avatars/unique/terminal_01.png</avatar_image>
+		<flags>
+			<!--flag>turret</flag-->
+		</flags>
+		<hull>hull_outpostOuterRoboticArmLow0posX0_1419147551059723posY-22_99178123474121</hull>
+		<consumables>
+			<!-- none -->
+		</consumables>
+		<devices>
+			<!-- none -->
+		</devices>
+		<weapons>
+			<weapon>
+				<slot>0</slot>
+				<weapon>socket_robotic_repair_low_pliers</weapon>
+			</weapon>
+		</weapons>
+		<drop_crate>crate_01</drop_crate>
+		<drop_list>
+			<drop>droplist_empty</drop>
+		</drop_list>
+		<effects>
+			<effect>
+				<effect_type>shield_charge_percent</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+			<effect>
+				<effect_type>shield_reestablishment_value</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+			<effect>
+				<effect_type>shield_regeneration_delay_value</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+			<effect>
+				<effect_type>shield_regeneration_percent</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+			<effect>
+				<effect_type>shield_regeneration_value</effect_type>
+				<effect_base>-999</effect_base>
+			</effect>
+			<effect>
+				<effect_type>hull_regeneration_value</effect_type>
+				<effect_base>5</effect_base>
+			</effect>
+			<effect>
+				<effect_type>structure_percent</effect_type>
+				<effect_base>300</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_self_special</effect_type>
+				<effect_base>-0.5</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_target_special</effect_type>
+				<effect_base>0.25</effect_base>
+			</effect>
+		</effects>
+	</data>
+</root>

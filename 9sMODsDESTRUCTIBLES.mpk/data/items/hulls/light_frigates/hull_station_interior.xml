@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_station_interior</id>
+		<title>Civilian shuttle</title>
+		<description>It would probably be a good idea to get rid of this as soon as you can...</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/hulls/hull_shuttle.png</icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>1</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+	
+		<flags>
+			<flag>civilian</flag>
+		</flags>
+		
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- none -->
+		</requirements>
+
+		<effects>
+
+
+			<effect>
+				<effect_type>speed_max_percent</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+
+
+			<!--effect>
+				<effect_type>speed_max_value</effect_type>
+				<effect_base>450</effect_base>
+			</effect-->
+
+
+
+
+
+
+
+
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>100</effect_base>
+			</effect>
+			<effect>
+				<effect_type>fuel_consumption_generator_percent</effect_type>
+				<effect_base>0</effect_base>
+			</effect>
+			<effect>
+				<effect_type>fuel_consumption_generator_value</effect_type>
+				<effect_base>0</effect_base>
+			</effect>
+
+			<effect>
+				<effect_type>energy_production_generator_value</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+
+			<effect>
+				<effect_type>shield_regeneration_percent</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+
+			<effect>
+				<effect_type>shield_regeneration_value</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+
+
+
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>100</effect_base>
+			</effect>
+			<effect>
+				<effect_type>radar_targeting_defense_percent</effect_type>
+				<effect_base>25</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+			<gfx>
+				<world_model>hulls/station_interior.obj</world_model>
+				<world_textures>
+					<diffuse>stations/outpost_01/dif_1024.png</diffuse>
+					<specular>stations/outpost_01/spec_1024.png</specular>
+					<normal>stations/outpost_01/nrm_1024.png</normal>
+					<illumination>stations/outpost_01/ilum_1024.png</illumination>
+				</world_textures>
+
+				<inventory_model>hulls/station_interior.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>stations/outpost_01/dif_1024.png</diffuse>
+					<specular>stations/outpost_01/spec_1024.png</specular>
+					<normal>stations/outpost_01/nrm_1024.png</normal>
+					<illumination>stations/outpost_01/ilum_1024.png</illumination>
+				</inventory_textures>
+				<world_scale>1</world_scale>
+				<inventory_scale>1.2</inventory_scale>
+			</gfx>
+			
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>
+				<on_engine_silent>engine/engine_silent.ogg</on_engine_silent>
+				<on_engine_engaged>engine/engine_engaged.ogg</on_engine_engaged>
+			</sfx>
+			
+			<physics>
+				<mass>1000</mass>
+<shapes>
+<shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>-18.100;1.400 -18.000;5.000 -16.000;10.500 -13.250;14.000 -9.500;16.750 -4.000;18.450 0.000;18.750 4.000;18.450 9.500;16.750 13.250;14.000 16.000;10.500 18.000;5.000 18.100;1.400</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-15.500;-2.450</offset>
+    <angle>0</angle>
+    <size>10.500;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>15.500;-2.450</offset>
+    <angle>0</angle>
+    <size>10.500;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-9.500;-2.750</offset>
+    <angle>45</angle>
+    <size>1.604;3.750</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>9.500;-2.750</offset>
+    <angle>315</angle>
+    <size>1.604;3.750</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-13.600;-0.260</offset>
+    <angle>0</angle>
+    <size>9.000;3.300</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>13.600;-0.260</offset>
+    <angle>0</angle>
+    <size>9.000;3.300</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>-9.05;-1.900 -9.05;1.390 -5.100;1.39</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>9.050;-1.900 9.050;1.39 5.100;1.39</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-15.500;-21.450</offset>
+    <angle>0</angle>
+    <size>10.500;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>15.500;-21.450</offset>
+    <angle>0</angle>
+    <size>10.500;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-9.350;-21.100</offset>
+    <angle>315</angle>
+    <size>1.650;3.300</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>9.350;-21.100</offset>
+    <angle>45</angle>
+    <size>1.419;3.600</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-13.600;-23.850</offset>
+    <angle>0</angle>
+    <size>9.000;3.750</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>13.600;-23.850</offset>
+    <angle>0</angle>
+    <size>9.000;3.750</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>-9.050;-22.000 -9.050;-25.6 -5.100;-25.6</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>9.050;-22.000 9.050;-25.6 5.100;-25.6</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>-18.000;-25.650 -18.000;-29.000 -16.000;-34.500 -13.250;-38.000 -9.500;-40.750 -4.000;-42.450 0.000;-42.750 4.000;-42.450 9.500;-40.750 13.250;-38.000 16.000;-34.500 18.000;-29.000 18.000;-25.650</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.000;-7.250</offset>
+    <angle>0</angle>
+    <size>9.500;0.500</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-4.950;-7.650</offset>
+    <angle>45</angle>
+    <size>1.250;0.600</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>4.950;-7.650</offset>
+    <angle>315</angle>
+    <size>1.250;0.600</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.000;-16.750</offset>
+    <angle>0</angle>
+    <size>9.500;0.500</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-4.950;-16.350</offset>
+    <angle>315</angle>
+    <size>1.250;0.600</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>4.950;-16.350</offset>
+    <angle>45</angle>
+    <size>1.250;0.600</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-8.500;-1.000</offset>
+    <angle>65.00001</angle>
+    <size>3.000;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>8.500;-1.000</offset>
+    <angle>295</angle>
+    <size>3.000;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-8.500;-23.000</offset>
+    <angle>295</angle>
+    <size>3.000;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>8.500;-23.000</offset>
+    <angle>65.00001</angle>
+    <size>3.000;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>-8.250;-4.500</offset>
+    <angle>0</angle>
+    <points>-0.16;-0.51 -0.48;-0.210 -0.550;0.000 0.640;1 0.640;0.2 0.000;-0.425</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>8.250;-19.500</offset>
+    <angle>180</angle>
+    <points>-0.16;-0.51 -0.48;-0.210 -0.550;0.000 0.640;1 0.640;0.2 0.000;-0.425</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>8.250;-4.5</offset>
+    <angle>90</angle>
+    <points>-0.16;-0.51 -0.48;-0.210 -0.45;-0.05 0.25;0.625 1.0;0.625 0.000;-0.425</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>-8.250;-19.5</offset>
+    <angle>270</angle>
+    <points>-0.16;-0.51 -0.48;-0.210 -0.45;-0.05 0.25;0.625 1.0;0.625 0.000;-0.425</points>
+    <mass>8</mass>
+  </shape>
+
+
+			</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>1</consumables>
+				<devices>1</devices>
+				<boosters>0</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>1;2</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>120</rotation_angle>
+					<rotation_speed>180</rotation_speed>
+					<position>-0.227;0.000;-0.203</position>
+				</weapon_slot>
+			</weapon_slots>
+
+			<trails>
+				<default_color>1;0.75;0</default_color>
+			
+				<!-- engine trails -->
+				<trail>
+					<id>trail_engine_hull_shuttle</id>
+					<position_offset>-0.57;0.09;-0.03</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+					<flare_offset>0.035;0;0</flare_offset>
+					<flare_brightness_mult>0.75</flare_brightness_mult>
+				</trail>
+				<trail>
+					<id>trail_engine_hull_shuttle</id>
+					<position_offset>-0.57;-0.09;-0.03</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+					<flare_offset>0.035;0;0</flare_offset>
+					<flare_brightness_mult>0.75</flare_brightness_mult>
+				</trail>
+				<trail>
+					<id>trail_engine_hull_shuttle</id>
+					<position_offset>-0.52;0.31;-0.02</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+					<flare_offset>0.035;0;0</flare_offset>
+					<flare_brightness_mult>0.75</flare_brightness_mult>
+				</trail>
+				<trail>
+					<id>trail_engine_hull_shuttle</id>
+					<position_offset>-0.52;-0.31;-0.02</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+					<flare_offset>0.035;0;0</flare_offset>
+					<flare_brightness_mult>0.75</flare_brightness_mult>
+				</trail>
+				
+				<!-- reverse trails -->
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.4363022;0.06;0.078</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.4363022;-0.06;0.078</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				
+				<!-- side trails -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.1509234;-0.2322969;0.01548143</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>3,5</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.1509234;0.2322969;0.01548143</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>4,6</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.4288765;0.3756528;-0.01999998</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>3,6</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_rcs_medium</id>
+					<engine_mode>4,5</engine_mode>
+					<position_offset>-0.4288765;-0.3756528;-0.01999998</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+				</trail>
+			</trails>
+			
+			<blinks>
+				<!-- left side -->
+				<blink>
+					<position_offset>0.28;0.15;-0.07</position_offset>
+					<size>1</size>
+					<delay>0</delay>
+					<duration>0.3</duration>
+					<interval>1.4</interval>
+					<color>0;0.4;1;1</color>
+					<light_position_offset>0.28;0.15;-0.5</light_position_offset>
+					<light_range>1</light_range>
+					<light_intensity>0.5</light_intensity>
+					<light_color>0.25;0.75;1;1</light_color>
+				</blink>
+				<blink>
+					<position_offset>0.24;0.15;-0.07</position_offset>
+					<size>1</size>
+					<delay>0.3</delay>
+					<duration>0.3</duration>
+					<interval>1.4</interval>
+					<color>0;0.4;1;1</color>
+					<light_position_offset>0.24;0.15;-0.5</light_position_offset>
+					<light_range>1</light_range>
+					<light_intensity>0.5</light_intensity>
+					<light_color>0.25;0.75;1;1</light_color>
+				</blink>
+				<blink>
+					<position_offset>0.20;0.15;-0.07</position_offset>
+					<size>1</size>
+					<delay>0.6</delay>
+					<duration>0.3</duration>
+					<interval>1.4</interval>
+					<color>0;0.4;1;1</color>
+					<light_position_offset>0.20;0.15;-0.5</light_position_offset>
+					<light_range>1</light_range>
+					<light_intensity>0.5</light_intensity>
+					<light_color>0.25;0.75;1;1</light_color>
+				</blink>
+				<!-- right side -->
+				<blink>
+					<position_offset>0.28;-0.15;-0.07</position_offset>
+					<size>1</size>
+					<delay>0</delay>
+					<duration>0.3</duration>
+					<interval>1.4</interval>
+					<color>0;0.4;1;1</color>
+					<light_position_offset>0.28;-0.15;-0.5</light_position_offset>
+					<light_range>1</light_range>
+					<light_intensity>0.5</light_intensity>
+					<light_color>0.25;0.75;1;1</light_color>
+				</blink>
+				<blink>
+					<position_offset>0.24;-0.15;-0.07</position_offset>
+					<size>1</size>
+					<delay>0.3</delay>
+					<duration>0.3</duration>
+					<interval>1.4</interval>
+					<color>0;0.4;1;1</color>
+					<light_position_offset>0.24;-0.15;-0.5</light_position_offset>
+					<light_range>1</light_range>
+					<light_intensity>0.5</light_intensity>
+					<light_color>0.25;0.75;1;1</light_color>
+				</blink>
+				<blink>
+					<position_offset>0.20;-0.15;-0.07</position_offset>
+					<size>1</size>
+					<delay>0.6</delay>
+					<duration>0.3</duration>
+					<interval>1.4</interval>
+					<color>0;0.4;1;1</color>
+					<light_position_offset>0.20;-0.15;-0.5</light_position_offset>
+					<light_range>1</light_range>
+					<light_intensity>0.5</light_intensity>
+					<light_color>0.25;0.75;1;1</light_color>
+				</blink>
+			</blinks>
+			
+		</item_data>
+	</data>
+</root>

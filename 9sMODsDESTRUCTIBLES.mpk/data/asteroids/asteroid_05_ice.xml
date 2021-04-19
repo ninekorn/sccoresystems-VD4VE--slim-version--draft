@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>asteroid_05_ice</id>
+		<title>Ice asteroid</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>asteroids/asteroid_05.obj</model>
+		<textures>
+			<diffuse>asteroids/ice_02/dif_256.jpg</diffuse>
+			<specular>asteroids/ice_02/spec_256.jpg</specular>
+			<normal>asteroids/ice_02/nrm_256.jpg</normal>
+		</textures>
+		<texture_mining_particle>asteroids/mining_particle_ice_01.png</texture_mining_particle>
+	</gfx>
+
+	<sfx>
+		<!-- sound info for different actions -->
+	</sfx>
+
+	<data>
+		<scale_range>0.75;1.25</scale_range>
+		<rotation_range>-1.0;1.0</rotation_range>
+
+		<physics>
+			<mass>2000</mass>
+			<shapes>
+				<shape>
+					<type>polygon</type>
+					<offset>0;0</offset>
+					<angle>0</angle>
+					<points>-0.685;-0.5603 -0.614;0.5901 -0.089;1.2094 0.533;1.1723 0.924;0.2355 0.612;-0.9615 0.088;-1.1815</points>
+				</shape>
+			</shapes>
+		</physics>
+
+		<type>1</type>
+		<difficulty>750</difficulty> <!-- how long will it take to mine asteroid -->
+
+		<contents>
+			<resource>
+				<id>ore_cyactite</id>
+				<quantity>75;125</quantity>
+				<extraction>1</extraction>
+			</resource>
+			<resource>
+				<id>ore_mangkolite</id>
+				<quantity>30;70</quantity>
+				<extraction>2</extraction>
+			</resource>
+			<resource>
+				<id>ore_seralucite</id>
+				<quantity>150;250</quantity>
+				<extraction>3</extraction>
+			</resource>
+		</contents>
+
+	</data>
+</root>

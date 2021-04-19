@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>asteroid_03_rock</id>
+		<title>Rocky asteroid</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>asteroids/asteroid_03.obj</model>
+		<textures>
+			<diffuse>asteroids/rock_03/dif_256.jpg</diffuse>
+			<specular>asteroids/rock_03/spec_256.jpg</specular>
+			<normal>asteroids/rock_03/nrm_256.jpg</normal>
+		</textures>
+		<texture_mining_particle>asteroids/mining_particle_rock_01.png</texture_mining_particle>
+	</gfx>
+
+	<sfx>
+		<!-- sound info for different actions -->
+	</sfx>
+
+	<data>
+		<scale_range>0.75;1.25</scale_range>
+		<rotation_range>-1.0;1.0</rotation_range>
+
+		<physics>
+			<mass>2000</mass>
+			<shapes>
+				<shape>
+					<type>polygon</type>
+					<offset>0;0</offset>
+					<angle>0</angle>
+					<points>-0.616;-0.7749 -0.888;0.2402 -0.483;0.9103 0.841;0.5276 0.947;-0.106 0.239;-0.9819</points>
+				</shape>
+			</shapes>
+		</physics>
+
+		<type>1</type>
+		<difficulty>1000</difficulty> <!-- how long will it take to mine asteroid -->
+
+		<contents>
+			<resource>
+				<id>ore_glepsite</id>
+				<quantity>250;350</quantity>
+				<extraction>5</extraction>
+			</resource>
+			<resource>
+				<id>ore_cyactite</id>
+				<quantity>200;400</quantity>
+				<extraction>5</extraction>
+			</resource>
+			<resource>
+				<id>ore_fraclasite</id>
+				<quantity>200;400</quantity>
+				<extraction>2</extraction>
+			</resource>
+			<resource>
+				<id>ore_mangkolite</id>
+				<quantity>30;65</quantity>
+				<extraction>1</extraction>
+			</resource>
+		</contents>
+
+	</data>
+</root>

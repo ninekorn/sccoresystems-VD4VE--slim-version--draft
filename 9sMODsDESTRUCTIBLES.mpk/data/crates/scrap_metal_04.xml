@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>scrap_metal_04</id>
+		<title>Crate</title>
+		<description></description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/scrap_metal_04.obj</model>
+		<textures>
+			<diffuse>space_objects/scrap_metal/scrap_metal_04.png</diffuse>
+			<normal>space_objects/scrap_metal/scrap_metal_04.png</normal>
+			<specular>space_objects/scrap_metal/scrap_metal_04.png</specular>
+		</textures>
+
+	</gfx>
+
+	<sfx>
+		<!-- none-->
+	</sfx>
+
+	<data>
+	
+		<movable>1</movable>
+		<persistent>0</persistent>
+		<instanced>1</instanced>
+		<show_on_map>1</show_on_map>
+	
+		<physics>
+			<mass>1</mass>
+			<shapes>
+				<shape>
+					<type>box</type>
+					<offset>0.000;0.000</offset>
+					<size>0.25;0.25</size>
+					<mass>1</mass>
+				</shape>
+			</shapes>
+		</physics>
+
+	</data>
+</root>

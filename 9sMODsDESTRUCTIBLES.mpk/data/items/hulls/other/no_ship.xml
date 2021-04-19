@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>no_ship</id>
+		<title>No ship NPC</title>
+		<description>There is no ship in here</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon></icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- none -->
+		</requirements>
+
+		<effects>
+			<!-- none -->
+		</effects>
+
+		<item_data>
+			<gfx>
+				<world_model>hulls/hull_shuttle.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_turret_platform/dif_256.jpg</diffuse>
+					<specular>hulls/hull_turret_platform/spec_256.jpg</specular>
+					<normal>hulls/hull_turret_platform/nrm_256.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_turret_platform.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_turret_platform/dif_256.jpg</diffuse>
+					<specular>hulls/hull_turret_platform/spec_256.jpg</specular>
+					<normal>hulls/hull_turret_platform/nrm_256.jpg</normal>
+				</inventory_textures>
+				<world_scale>1</world_scale>
+				<inventory_scale>1</inventory_scale>
+			</gfx>
+			
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>				
+			</sfx>
+			
+			<physics>
+				<mass>20</mass>
+				<shapes>
+					<shape>
+						<type>box</type>
+						<offset>0.000;0.000</offset>
+						<size>0.5;0.5</size>
+						<mass>1</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>1</consumables>
+				<devices>1</devices>
+				<boosters>1</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>4</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>0</display_type>
+					<direction>180</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>-0.572;0.197;0.170</position>
+				</weapon_slot>
+			</weapon_slots>
+
+			<trails>
+				<!-- none -->
+			</trails>
+			
+			<blinks>
+				<!-- none -->
+			</blinks>
+			
+		</item_data>
+	</data>
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>SCdestroyedFangParts01-1</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/destroyed_hulls/fang/SCdestroyedFangParts01-1.obj</model>
+		<textures>
+			<diffuse>space_objects/destroyed_hulls/fang/SCdestroyedFangParts01-1.png</diffuse>
+			<specular>space_objects/destroyed_hulls/fang/SCdestroyedFangParts01-1.png</specular>
+			<normal>space_objects/destroyed_hulls/fang/SCdestroyedFangParts01-1.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+	<data>
+		
+			<scale_range>1.0;1.0</scale_range>
+		
+			<rotation_range>-1.0;1.0</rotation_range>
+		
+			<physics>
+				<mass>6.5</mass>
+				<shapes>
+					<shape>
+    <type>box</type>
+    <offset>0.05;-0.125</offset>
+    <angle>-70</angle>
+    <size>0.5;0.125</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0;0.2</offset>
+    <angle>80</angle>
+    <size>0.5;0.135</size>
+    <mass>8</mass>
+  </shape>
+				</shapes>
+			</physics>
+	</data>
+</root>

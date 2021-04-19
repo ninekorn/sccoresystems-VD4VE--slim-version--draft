@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>xml_outpost_01_door_LB</id>
+		<title>(Unused)</title>
+		<description>(Unused)</description>
+		<enabled>1</enabled>
+	</header>
+
+	<data>
+
+		<spawning>
+			<tags>drone</tags>
+			<level_from>0</level_from>
+			<level_to>15</level_to>
+			<max_in_group>1</max_in_group>
+			<chance>100</chance>
+		</spawning>
+	
+		<hull>hull_station_exterior</hull>
+
+		<consumables>
+		</consumables>
+
+		<devices>
+			<!--device>drone_device_repair_beam</device-->
+		</devices>
+		
+		<drop_crate>crate_01</drop_crate>
+
+		<drop_list>
+			<drop>droplist_empty</drop>
+		</drop_list>
+
+		<weapons>
+			<weapon>
+				<slot>0</slot>
+				<weapon>weapon_invisible</weapon>
+				<!--weapon>weapon_mining_civilian</weapon-->
+				<!--weapon>weapon_plasma_cannon_light</weapon-->
+			</weapon>	
+		</weapons>
+
+		<effects>
+
+			<effect>
+				<effect_type>speed_max_value</effect_type>
+				<effect_base>0</effect_base>
+			</effect>
+			<effect>
+				<effect_type>speed_max_percent</effect_type>
+				<effect_base>0</effect_base>
+			</effect>
+
+			<effect>
+				<effect_type>maneuvering_percent</effect_type>
+				<effect_base>0</effect_base>
+			</effect>
+
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>0</effect_base>
+			</effect>
+
+		</effects>
+		
+	</data>
+</root>

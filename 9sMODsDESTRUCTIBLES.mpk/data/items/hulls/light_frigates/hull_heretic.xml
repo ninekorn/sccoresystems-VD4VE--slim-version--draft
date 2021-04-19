@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_heretic</id>
+		<title>Heretic</title>
+		<description>This hull is mostly used for engineering operations or as a light support vessel. It also has two mine slots allowing it to escape fights more easily.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/hulls/hull_heretic.png</icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>1</shops_level>
+			<faction_filter></faction_filter>
+			<price>3800</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<effects>
+				<effect>
+					<id>piloting_light_frigates_ability</id>
+					<value>1</value>
+				</effect>
+			</effects>
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>1200</effect_base>
+			</effect>
+			<effect>
+				<effect_type>armor_value</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>200</effect_base>
+			</effect>
+			<effect>
+				<effect_type>radar_targeting_defense_percent</effect_type>
+				<effect_base>50</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+			<gfx>
+				<world_model>hulls/hull_heretic.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_heretic/dif_256.jpg</diffuse>
+					<specular>hulls/hull_heretic/spec_256.jpg</specular>
+					<normal>hulls/hull_heretic/nrm_256.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_heretic.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_heretic/dif_1024.jpg</diffuse>
+					<specular>hulls/hull_heretic/spec_1024.jpg</specular>
+					<normal>hulls/hull_heretic/nrm_1024.jpg</normal>
+				</inventory_textures>
+				<world_scale>0.9</world_scale>
+				<inventory_scale>0.9</inventory_scale>
+			</gfx>
+			
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>
+				<on_engine_silent>engine/engine_silent.ogg</on_engine_silent>
+				<on_engine_engaged>engine/engine_engaged.ogg</on_engine_engaged>
+			</sfx>
+			
+			<physics>
+				<mass>1000</mass>
+				<shapes>
+					<shape>
+						<type>box</type>
+						<offset>-0.53;0</offset>
+						<size>0.2;1.140</size>
+						<mass>1</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>0;0</offset>
+						<size>1.6;0.6</size>
+						<mass>1</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>2</consumables>
+				<devices>3</devices>
+				<boosters>2</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<!-- mine weapon -->
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>4</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>0</display_type>
+					<direction>180</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>-0.572;0.197;0.170</position>
+				</weapon_slot>
+				<!-- energy weapon -->
+				<weapon_slot>
+					<id>1</id>
+					<slot_type>1</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>20</rotation_angle>
+					<rotation_speed>80</rotation_speed>
+					<position>-0.46;0.55;-0.07</position>
+				</weapon_slot>
+				<!-- energy weapon -->
+				<weapon_slot>
+					<id>2</id>
+					<slot_type>1</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>20</rotation_angle>
+					<rotation_speed>80</rotation_speed>
+					<position>-0.46;-0.55;-0.07</position>
+				</weapon_slot>
+				<!-- mine weapon -->
+				<weapon_slot>
+					<id>3</id>
+					<slot_type>4</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>0</display_type>
+					<direction>180</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>-0.572;-0.197;0.170</position>
+				</weapon_slot>
+			</weapon_slots>
+
+			<trails>
+				<default_color>1;0.75;0</default_color>
+			
+				<trail>
+					<id>trail_engine_medium</id>
+					<position_offset>-0.76;-0.15;-0.08</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>2</engine_mode>
+				</trail>	
+				<trail>
+					<id>trail_engine_medium</id>
+					<position_offset>-0.76;0.15;-0.08</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>2</engine_mode>
+				</trail>	
+				<trail>
+					<id>trail_engine_medium</id>
+					<position_offset>-0.75;0;0.135</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>2</engine_mode>
+				</trail>
+				
+				<!-- left rcs: back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.387;0.321;-0.058</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>3,6</engine_mode>
+				</trail>
+				<!-- right rcs: back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.387;-0.321;-0.058</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>4,5</engine_mode>
+				</trail>
+				<!-- left rcs: front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.485;0.216;0.041</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>4,6</engine_mode>
+				</trail>
+				<!-- right rcs: front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.485;-0.216;0.041</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>3,5</engine_mode>
+				</trail>
+				<!-- reverse -->
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.536;0.036;0.066</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.536;-0.036;0.066</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+			</trails>
+		</item_data>
+	</data>
+</root>

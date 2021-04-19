@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>mine_01</id>
+		<title>(Unused)</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/mine_01.obj</model>
+		<textures>
+			<diffuse>space_objects/mine_01/dif_256.jpg</diffuse>
+			<normal>space_objects/mine_01/nrm_256.jpg</normal>
+		</textures>
+	</gfx>
+
+	<sfx>
+		<!-- none-->
+	</sfx>
+
+	<data>
+		<scale_range>1;1</scale_range>
+		<rotation_range>-1.0;1.0</rotation_range>
+
+		<physics>
+			<mass>50</mass>
+			<shapes>
+				<shape>
+					<type>polygon</type>
+					<offset>0;0</offset>
+					<angle>0</angle>
+					<points>-0.45;-0.25 0;0.45 0.45;-0.25</points>
+					<mass>8</mass>
+				</shape>
+			</shapes>
+		</physics>
+
+	</data>
+</root>

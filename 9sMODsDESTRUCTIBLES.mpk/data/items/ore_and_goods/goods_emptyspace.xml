@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>goods_emptyspace</id>
+		<title>empty space</title>
+		<description>Empty Space</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/ore_and_goods/goods_emptyspace.png</icon>
+	</gfx>
+
+	<data>
+		<type>200</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<faction_only>0</faction_only>
+			<faction_reputation>0</faction_reputation>
+			<price>0</price>
+		</shops>
+		
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- none -->
+		</requirements>
+
+		<effects>
+			<!-- none -->
+		</effects>
+
+		<item_data>
+			<stack_size>1</stack_size>
+			<base_quantity_production>0</base_quantity_production>
+			<base_quantity_neutral>0</base_quantity_neutral>
+			<base_quantity_consumption>0</base_quantity_consumption>
+			<production_chance>0</production_chance>
+			<consumption_chance>0</consumption_chance>
+		</item_data>
+	</data>
+</root>

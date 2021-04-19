@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>weapon_drone_combat_energy_rc_particle_discharge</id>
+		<title>Drone energy particle discharge</title>
+		<description>TODO</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/weapons_01_energy/weapon_particle_discharge_cannon.png</icon>
+	</gfx>
+
+	<data>
+		<type>11</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<effects>
+				<effect>
+					<id>use_energy_weapons_ability</id>
+					<value>3</value>
+				</effect>
+			</effects>
+		</requirements>
+
+		<effects>
+			<!-- none -->
+		</effects>
+
+		<item_data>
+			<durability>25000</durability>
+			<gfx>
+				<model>turrets/energy_turret_01.obj</model>
+				<textures>
+					<diffuse>turrets/energy_turret_01/dif_256.jpg</diffuse>
+					<specular>turrets/energy_turret_01/spec_256.jpg</specular>
+					<normal>turrets/energy_turret_01/nrm_256.jpg</normal>
+				</textures>
+			</gfx>
+			<sfx>
+				<on_prepare></on_prepare>
+				<on_complete></on_complete>
+				<on_recharge>items/generic_on_recharge.ogg</on_recharge>
+				<on_empty>items/generic_on_empty.ogg</on_empty>
+				<on_not_ready>items/generic_on_not_ready.ogg</on_not_ready>
+			</sfx>
+			<weapon>
+				<durability_per_shot>1</durability_per_shot>
+				<weapon_type>1</weapon_type>
+				<weapon_size>3</weapon_size>
+				<fire_sequence_delay_sec>1.5</fire_sequence_delay_sec>
+				<fire_sequence_energy>0</fire_sequence_energy>
+				<ammo_max>100</ammo_max>
+				<ammo_per_shot>75</ammo_per_shot>
+				<ammo_recharge_sec>8</ammo_recharge_sec>
+				<ammo_recharge_energy>10</ammo_recharge_energy>
+				<ammo_auto_recharge_at_station>1</ammo_auto_recharge_at_station>
+				<ammo_recharge_price>0</ammo_recharge_price>
+				<ammo_meter>2</ammo_meter>
+			</weapon>
+			<projectiles>
+			
+				<projectile>
+					<quantity>1</quantity>
+					<sfx>
+						<on_shoot>items/energy_cannon_on_shoot.ogg</on_shoot>
+						<on_hit_body>items/energy_cannon_on_hit_body.ogg</on_hit_body>
+						<on_hit_shield>items/energy_cannon_on_hit_shield.ogg</on_hit_shield>
+					</sfx>
+					<gfx>
+						<ray>
+							<width>1</width>
+							<textures>
+								<texture>
+									<diffuse>projectiles/pdc_ray.png</diffuse>
+									<color>1;1;1;1</color>
+									<speed>1</speed>
+								</texture>
+							</textures>
+							<particles>
+								<!-- none -->
+							</particles>
+						</ray>
+						<particle_hit_body>
+							<color>0.2;0.5;1;1</color>
+							<density>1</density>
+						</particle_hit_body>
+						<particle_hit_shield>
+							<color>0.2;0.5;1;1</color>
+							<density>1</density>
+						</particle_hit_shield>
+						<muzzle_flash_sprite>
+							<width>0.5</width>
+							<height>0.5</height>
+							<textures>
+								<diffuse>projectiles/muzzle_flash_03_plasma.png</diffuse>
+								<color>0.7;0.7;1;1</color>
+							</textures>
+							<flash_origin>0.215;0;0</flash_origin>
+						</muzzle_flash_sprite>				
+						<fire_origin>0.241;0.000;0.000</fire_origin>
+					</gfx>
+					<cancel>0</cancel>
+					<shot_delay>0.5</shot_delay>
+					<angle>0</angle>
+					<spread>0</spread>
+					<dmg>25</dmg>
+					<dmg_type>1</dmg_type>
+					<distance>20</distance>
+					<max_distance>60</max_distance>
+					<impulse>0</impulse>
+					<!-- projectile type: direct_hit=1, ray=2, missile=3, bullet=4 -->
+					<projectile_type>1</projectile_type>
+					<duration>0.5</duration>
+					<duration_prepare>0</duration_prepare>
+					<duration_complete>0.3</duration_complete>
+					<homing>0</homing>
+					<speed>0</speed>
+					<radius>0</radius>
+					<max_radius>0</max_radius>
+				</projectile>
+				
+			</projectiles>
+		</item_data>
+	</data>
+</root>

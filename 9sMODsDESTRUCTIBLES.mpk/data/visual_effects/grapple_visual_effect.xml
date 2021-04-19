@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>grapple_visual_effect</id>
+		<enabled>1</enabled>
+	</header>
+	<data>
+	
+		<ray>
+			<gfx>
+				<duration>1</duration>
+				<duration_prepare>0.1</duration_prepare>
+				<duration_complete>0.1</duration_complete>
+				<width>1.5</width>
+				<textures>
+					<texture>
+						<diffuse>projectiles/beam_fx.png</diffuse>
+						<color>0.4;0.0;1;1</color>
+						<speed>-0.5</speed>
+					</texture>
+					<texture>
+						<diffuse>projectiles/beam_ray.png</diffuse>
+						<color>0.6;0.5;1;1</color>
+						<speed>-1</speed>
+					</texture>
+				</textures>
+				<particles>
+					<particle>
+						<color>0.4;0.0;1;0.25</color>
+						<density>8</density>
+						<size>0.5</size>
+						<diffuse>projectiles/particle_01.png</diffuse>
+					</particle>
+				</particles>
+			</gfx>
+			<sfx>
+				<on_prepare>special/grappler_grapple.ogg</on_prepare>
+				<on_shoot>special/grappler_process.ogg</on_shoot>
+			</sfx>
+		</ray>
+		
+	</data>
+</root>

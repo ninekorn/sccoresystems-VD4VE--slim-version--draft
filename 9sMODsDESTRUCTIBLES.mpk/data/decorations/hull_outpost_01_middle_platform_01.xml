@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<header>
+		<id>hull_outpost_01_middle_platform_01</id>
+		<title>(Unused)</title>
+		<description></description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>decorations/hull_outpost_01_middle_platform.obj</model>
+		<textures>
+			<diffuse>decorations/broken_asteroid_01/dif_512.jpg</diffuse>
+			<specular>decorations/broken_asteroid_01/spec_512.jpg</specular>
+			<normal>decorations/broken_asteroid_01/nrm_512.jpg</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+</root>

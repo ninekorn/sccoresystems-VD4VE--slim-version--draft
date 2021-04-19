@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_orca_freedom</id>
+		<title>Orca - Freedom</title>
+		<description>Special model of Orca hull designed by the Freedom faction to accommodate their interests.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/hulls/hull_orca_freedom.png</icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>22000</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<effects>
+				<effect>
+					<id>piloting_light_cruisers_ability</id>
+					<value>1</value>
+				</effect>
+			</effects>
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>3800</effect_base>
+			</effect>
+			<effect>
+				<effect_type>armor_value</effect_type>
+				<effect_base>30</effect_base>
+			</effect>
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>100</effect_base>
+			</effect>
+			<effect>
+				<effect_type>maneuvering_percent</effect_type>
+				<effect_base>-20</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+
+			<gfx>
+				<world_model>hulls/hull_orca.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_orca/dif_256_freedom.jpg</diffuse>
+					<specular>hulls/hull_orca/spec_256.jpg</specular>
+					<normal>hulls/hull_orca/nrm_256.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_orca.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_orca/dif_1024_freedom.jpg</diffuse>
+					<specular>hulls/hull_orca/spec_1024.jpg</specular>
+					<normal>hulls/hull_orca/nrm_1024.jpg</normal>
+				</inventory_textures>
+				<world_scale>1</world_scale>
+				<inventory_scale>1</inventory_scale>
+			</gfx>
+			
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>
+				<on_engine_silent>engine/engine_silent.ogg</on_engine_silent>
+				<on_engine_engaged>engine/engine_engaged.ogg</on_engine_engaged>
+			</sfx>
+			
+			<physics>
+				<mass>1000</mass>
+				<shapes>
+					<shape>
+						<type>polygon</type>
+						<offset>0.000;0.000</offset>
+						<angle>0</angle>
+						<points>0.066;-0.244 -0.044;-0.465 -0.373;-0.465 -0.565;-0.304 -0.572;0.250 -0.129;0.673 0.072;0.251</points>
+						<mass>8</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>0.325;0.000</offset>
+						<angle>0</angle>
+						<size>0.585;0.216</size>
+						<mass>8</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>3</consumables>
+				<devices>2</devices>
+				<boosters>6</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<!-- missile (top) -->
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>3</slot_type>
+					<slot_size>2</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>0.003;-0.322;-0.046</position>
+				</weapon_slot>
+				
+				<!-- missile (bottom) -->
+				<weapon_slot>
+					<id>1</id>
+					<slot_type>3</slot_type>
+					<slot_size>2</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>0.003;-0.392;0.189</position>
+				</weapon_slot>
+				
+				<!-- mine -->
+				<weapon_slot>
+					<id>2</id>
+					<slot_type>4</slot_type>
+					<slot_size>2</slot_size>
+					<display_type>0</display_type>
+					<direction>180</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>-0.362;0.0;0.113</position>
+				</weapon_slot>
+				
+				<!-- energy / ballistic (wing) -->
+				<weapon_slot>
+					<id>3</id>
+					<slot_type>1;2</slot_type>
+					<slot_size>2</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>30</rotation_angle>
+					<rotation_speed>60</rotation_speed>
+					<position>-0.182;0.393;-0.140</position>
+				</weapon_slot>
+				
+			</weapon_slots>
+
+			<trails>
+				<default_color>0.33;0.25;1</default_color>
+				
+				<!-- main engines -->
+				<trail>
+					<id>trail_engine_medium</id>
+					<position_offset>-0.707;0.210;0.088</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>2</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_medium</id>
+					<position_offset>-0.707;-0.210;0.088</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>2</engine_mode>
+				</trail>
+				<!-- reverse -->
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.362;0.197;0.086</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>1</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.362;-0.197;0.086</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>1</engine_mode>
+				</trail>
+				
+				<!-- rcs left front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.280;0.249;0.086</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>4,6</engine_mode>
+				</trail>
+				<!-- rcs right front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.280;-0.249;0.086</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>3,5</engine_mode>
+				</trail>
+				<!-- rcs left back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.503;0.440;0.086</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>3,6</engine_mode>
+				</trail>
+				<!-- rcs right back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.503;-0.440;0.086</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>4,5</engine_mode>
+				</trail>
+				
+			</trails>
+		</item_data>
+	</data>
+</root>

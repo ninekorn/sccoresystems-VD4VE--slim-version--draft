@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>OnBoardComputer_Main</id>
+		<title>Commands</title>
+		<enabled>1</enabled>
+	</header>
+
+	<data>
+		<category>quests</category>
+
+		<variables>
+			<var>quest_system_id</var>
+			<var>quest_base_id</var>
+			<var>quest_drone_id</var>
+		</variables>
+
+		<flags>
+			<flag>add_on_init</flag>
+		</flags>
+
+		<singleplayer>1</singleplayer>
+		<multiplayer>1</multiplayer>	
+	</data>
+</root>

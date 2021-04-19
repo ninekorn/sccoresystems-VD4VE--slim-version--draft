@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>SCdestroyedAsteriaParts01-2</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/destroyed_hulls/asteria/SCdestroyedAsteriaParts01-2.obj</model>
+		<textures>
+			<diffuse>space_objects/destroyed_hulls/asteria/SCdestroyedAsteriaParts01-2.png</diffuse>
+			<specular>space_objects/destroyed_hulls/asteria/SCdestroyedAsteriaParts01-2.png</specular>
+			<normal>space_objects/destroyed_hulls/asteria/SCdestroyedAsteriaParts01-2.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+	<data>
+		
+			<scale_range>1.0;1.0</scale_range>
+		
+			<rotation_range>-1.0;1.0</rotation_range>
+		
+			<physics>
+				<mass>6.5</mass>
+				<shapes>
+					<shape>
+    <type>polygon</type>
+    <offset>0;0</offset>
+    <angle>0</angle>
+    <points>-0.3;-0.1975 -0.315;0.045 -0.275;0.125 -0.185;0.175 0.115;0.175 0.195;0.05 0.195;-0.06 0.125;-0.195</points>
+    <mass>8</mass>
+  </shape>
+				</shapes>
+			</physics>
+	</data>
+</root>

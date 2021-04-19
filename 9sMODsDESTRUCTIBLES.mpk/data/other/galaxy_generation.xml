@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>galaxy_generation</id>
+	</header>
+
+	<data>
+		<variables>
+			<var>
+				<id>galaxy_size</id>
+				<title>Galaxy size</title>
+				<description>Determines the size of the galaxy.</description>
+				<type>slider</type>
+			</var>			
+			<!--var>
+				<id>stations_number</id>
+				<title>Number of stations</title>
+				<description>Determines how commonly stations and bases are encountered in the galaxy.</description>
+			</var>
+			<var>
+				<id>resources</id>
+				<title>Resources</title>
+				<description>Determines how rich the galaxy in resources that can be extracted from asteroids.</description>
+			</var-->
+		</variables>
+	</data>
+</root>

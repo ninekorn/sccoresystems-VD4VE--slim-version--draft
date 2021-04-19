@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>droplist_empty</id>
+	</header>
+
+	<data>
+		<!-- empty list -->
+		<list>
+			<type>2</type>
+			<elements></elements>
+		</list>
+	</data>
+</root>

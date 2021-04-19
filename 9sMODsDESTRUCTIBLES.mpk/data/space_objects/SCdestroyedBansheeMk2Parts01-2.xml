@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>SCdestroyedBansheeMk2Parts01-2</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/destroyed_hulls/bansheemk2/SCdestroyedBansheeMk2Parts01-2.obj</model>
+		<textures>
+			<diffuse>space_objects/destroyed_hulls/bansheemk2/SCdestroyedBansheeMk2Parts01-2.png</diffuse>
+			<specular>space_objects/destroyed_hulls/bansheemk2/SCdestroyedBansheeMk2Parts01-2.png</specular>
+			<normal>space_objects/destroyed_hulls/bansheemk2/SCdestroyedBansheeMk2Parts01-2.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+	<data>
+		
+			<scale_range>1.0;1.0</scale_range>
+		
+			<rotation_range>-1.0;1.0</rotation_range>
+		
+			<physics>
+				<mass>6.5</mass>
+				<shapes>
+					<shape>
+    <type>circle</type>
+    <offset>-0.01;0.095</offset>
+    <angle>0</angle>
+    <radius>0.185</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.14;0</offset>
+    <angle>-35</angle>
+    <size>0.4;0.3</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.05;-0.225</offset>
+    <angle>0</angle>
+    <size>0.35;0.1</size>
+    <mass>8</mass>
+  </shape>
+				</shapes>
+			</physics>
+	</data>
+</root>

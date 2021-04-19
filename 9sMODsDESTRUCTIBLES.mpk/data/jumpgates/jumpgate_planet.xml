@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>jumpgate_planet</id>
+		<title>(Unused)</title>
+		<description>(Unused)</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>jumpgates/jumpgate_invisible.obj</model>
+		<scale>2.6</scale>
+		<textures>
+			<diffuse>jumpgates/jumpgate_01/dif_512.jpg</diffuse>
+			<specular>jumpgates/jumpgate_01/spec_512.jpg</specular>
+			<normal>jumpgates/jumpgate_01/nrm_512.jpg</normal>
+			<illumination>jumpgates/jumpgate_01/ilum_512.jpg</illumination>
+		</textures>
+	</gfx>
+
+	<sfx>
+		<on_dematerialize>jumpgates/jumpgate_dematerialize.ogg</on_dematerialize>
+		<on_jump>jumpgates/jumpgate_jump.ogg</on_jump>
+		<on_arrive>jumpgates/jumpgate_arrive.ogg</on_arrive>
+		<on_materialize>jumpgates/jumpgate_materialize.ogg</on_materialize>
+	</sfx>
+
+	<data>
+		<radius>50</radius>
+
+		<physics>
+			<mass>9001</mass>
+			<shapes>
+				<!-- no physics -->
+			</shapes>
+		</physics>
+		
+		<blinks>
+			<!-- none -->
+		</blinks>
+		
+	</data>
+</root>

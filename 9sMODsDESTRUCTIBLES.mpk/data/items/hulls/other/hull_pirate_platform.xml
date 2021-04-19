@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_pirate_platform</id>
+		<title>Pirate platform</title>
+		<description>You shouldn't have seen this, you know.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon></icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- none -->
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>2500</effect_base>
+			</effect>
+			<effect>
+				<effect_type>armor_value</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_self_special</effect_type>
+				<effect_base>-1</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_target_special</effect_type>
+				<effect_base>0.25</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+			<gfx>
+				<world_model>hulls/hull_pirate_platform.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_pirate_platform/dif_1024.jpg</diffuse>
+					<specular>hulls/hull_pirate_platform/spec_1024.jpg</specular>
+					<normal>hulls/hull_pirate_platform/nrm_1024.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_pirate_platform.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_pirate_platform/dif_1024.jpg</diffuse>
+					<specular>hulls/hull_pirate_platform/spec_1024.jpg</specular>
+					<normal>hulls/hull_pirate_platform/nrm_1024.jpg</normal>
+				</inventory_textures>
+				<world_scale>3</world_scale>
+				<inventory_scale>1</inventory_scale>
+			</gfx>
+			
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>				
+			</sfx>
+			
+			<physics>
+				<mass>9001</mass>
+				<shapes>
+					<shape>
+						<type>box</type>
+						<offset>0.015;-0.012</offset>
+						<angle>359.7397</angle>
+						<size>1.631;1.796</size>
+						<mass>8</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>0.020;-0.047</offset>
+						<angle>0</angle>
+						<size>2.319;0.194</size>
+						<mass>8</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>0</consumables>
+				<devices>0</devices>
+				<boosters>0</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>1</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>-60</direction>
+					<rotation_angle>170</rotation_angle>
+					<rotation_speed>120</rotation_speed>
+					<position>0.487;0.508;-0.371</position>
+				</weapon_slot>
+				<weapon_slot>
+					<id>1</id>
+					<slot_type>1</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>-120</direction>
+					<rotation_angle>150</rotation_angle>
+					<rotation_speed>120</rotation_speed>
+					<position>-0.481;0.530;-0.360</position>
+				</weapon_slot>
+				<weapon_slot>
+					<id>2</id>
+					<slot_type>1</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>-310</direction>
+					<rotation_angle>150</rotation_angle>
+					<rotation_speed>120</rotation_speed>
+					<position>0.422;-0.634;-0.363</position>
+				</weapon_slot>
+				<weapon_slot>
+					<id>3</id>
+					<slot_type>1</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>-225</direction>
+					<rotation_angle>150</rotation_angle>
+					<rotation_speed>120</rotation_speed>
+					<position>-0.422;-0.634;-0.363</position>
+				</weapon_slot>
+			</weapon_slots>
+
+			<trails>
+				<!-- none -->
+			</trails>
+			
+			<blinks>
+				<!-- 1 -->
+				<blink>
+					<position_offset>0.000;-0.378;-1.040</position_offset>
+					<size>1</size>
+					<delay>0</delay>
+					<duration>0.4</duration>
+					<interval>2</interval>
+					<color>1;0;0;1</color>
+					<light_position_offset>0.0;0.0;0.1</light_position_offset>
+					<light_range>2</light_range>
+					<light_intensity>1.2</light_intensity>
+					<light_color>1;0;0;1</light_color>
+				</blink>
+				<!-- 2 -->
+				<blink>
+					<position_offset>0.000;-0.712;-0.971</position_offset>
+					<size>1</size>
+					<delay>0.4</delay>
+					<duration>0.4</duration>
+					<interval>2</interval>
+					<color>1;0;0;1</color>
+					<light_position_offset>0.0;0.0;0.1</light_position_offset>
+					<light_range>2</light_range>
+					<light_intensity>1.2</light_intensity>
+					<light_color>1;0;0;1</light_color>
+				</blink>
+				<!-- 3 -->
+				<blink>
+					<position_offset>0.000;-0.958;-0.799</position_offset>
+					<size>1</size>
+					<delay>0.8</delay>
+					<duration>0.4</duration>
+					<interval>2</interval>
+					<color>1;0;0;1</color>
+					<light_position_offset>0.0;0.0;0.1</light_position_offset>
+					<light_range>2</light_range>
+					<light_intensity>1.2</light_intensity>
+					<light_color>1;0;0;1</light_color>
+				</blink>
+			</blinks>
+			
+		</item_data>
+	</data>
+</root>

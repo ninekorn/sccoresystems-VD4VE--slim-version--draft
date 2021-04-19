@@ -1,0 +1,14 @@
+﻿$n0001:       Mining failed
+$n0002:       Energy depleted.
+$n0003:       Asteroid is depleted.
+$n0004:       
+$n0005:       Cannot extract.
+$n0006:       To extract certain minerals, you need better mining equipment.
+$n0007:       Your cargo hold is full.
+$n0008:       
+$n0009:       Mining failed
+$n0010:       You cannot mine if you are being attacked.
+$n0011:       Mining failed
+$n0012:       You must not move during the mining process.
+$n0013:       Mining canceled
+$n0014:       You've canceled the mining process.

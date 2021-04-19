@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>waypoint_00</id>
+		<title>(Unused)</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/waypoint_00.obj</model>
+		<textures>
+			<diffuse>space_objects/scrap_metal/waypoint_00.png</diffuse>
+			<normal>space_objects/scrap_metal/waypoint_00.png</normal>
+			<specular>space_objects/scrap_metal/waypoint_00.png</specular>
+		</textures>
+	</gfx>
+
+	<sfx>
+		<!-- none-->
+	</sfx>
+
+	<data>
+		<movable>0</movable>
+		<persistent>0</persistent>
+		<instanced>1</instanced>
+		<show_on_map>1</show_on_map>
+	
+		<scale_range>0.15;0.15</scale_range>
+		<rotation_range>0;0</rotation_range>
+
+		<depth>-0.275</depth>
+		
+		<!-- Determines when to show the activation button.
+			 Interaction types: 
+				1 = when point with cursor
+				2 = when the ship reach activation zone (circle determined by radius) -->
+		<interaction_type>1</interaction_type>
+		<interaction_radius>5</interaction_radius>
+		
+		<physics>
+			<mass>9001</mass>
+			<shapes>
+				<!-- no physics -->
+			</shapes>
+		</physics>
+
+	</data>
+</root>

@@ -1,0 +1,2 @@
+﻿$n0001:       Activation failed
+$n0002:       Not enough energy to activate the device.

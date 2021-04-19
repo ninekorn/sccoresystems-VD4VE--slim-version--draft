@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>planets</id>
+	</header>
+
+	<data>
+
+		<!-- ### Surface textures ### -->
+		<planet_textures>
+			<definition>
+				<id>habitable_01</id>
+				<textures>
+					<diffuse>planets/planet_01_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>habitable_02</id>
+				<textures>
+					<diffuse>planets/planet_09_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>habitable_03</id>
+				<textures>
+					<diffuse>planets/planet_10_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>red_01</id>
+				<textures>
+					<diffuse>planets/planet_02_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>gasgiant_01</id>
+				<textures>
+					<diffuse>planets/planet_03_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>gasgiant_02</id>
+				<textures>
+					<diffuse>planets/planet_08_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>barren_01</id>
+				<textures>
+					<diffuse>planets/planet_04_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>desert_01</id>
+				<textures>
+					<diffuse>planets/planet_05_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>ice_01</id>
+				<textures>
+					<diffuse>planets/planet_06_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>water_01</id>
+				<textures>
+					<diffuse>planets/planet_07_dif.jpg</diffuse>
+				</textures>
+			</definition>
+			<definition>
+				<id>alien_01</id>
+				<textures>
+					<diffuse>planets/planet_11_dif.jpg</diffuse>
+				</textures>
+			</definition>
+		</planet_textures>
+
+		<!-- ### Clouds textures ### -->
+		<clouds_textures>
+			<definition>
+				<id>habitable_01</id>
+				<textures>
+					<!-- please note this texture must be non-transparent with black background -->
+					<diffuse>planets/clouds_01.jpg</diffuse>
+				</textures>
+			</definition>
+		</clouds_textures>
+
+		<!-- ### Atmosphere colors ### -->
+		<atmosphere_colors>
+			<definition>
+				<id>habitable_01</id>
+				<color_from>0;0.45;1;1</color_from> <!-- RGBA color -->
+				<color_to>0;0.45;1;1</color_to>
+			</definition>
+			<definition>
+				<id>red_01</id>
+				<color_from>1;0.4;0;0.5</color_from>
+				<color_to>1;0.4;0;0.5</color_to>
+			</definition>
+			<definition>
+				<id>gasgiant_01</id>
+				<color_from>0.2;0.5;1;1</color_from>
+				<color_to>0.2;0.5;1;1</color_to>
+			</definition>
+			<definition>
+				<id>gasgiant_02</id>
+				<color_from>0.89;0.77;0.7;1</color_from>
+				<color_to>0.89;0.77;0.7;1</color_to>
+			</definition>
+			<definition>
+				<id>barren_01</id>
+				<color_from>0;0;0;0</color_from>
+				<color_to>0;0;0;0</color_to>
+			</definition>
+			<definition>
+				<id>desert_01</id>
+				<color_from>0.8;0.5;0.1;0.7</color_from>
+				<color_to>0.8;0.5;0.1;0.7</color_to>
+			</definition>
+			<definition>
+				<id>ice_01</id>
+				<color_from>0.3;0.5;1;0.5</color_from>
+				<color_to>0.3;0.5;1;0.5</color_to>
+			</definition>
+			<definition>
+				<id>alien_01</id>
+				<color_from>0.6;0.2;0.6;0.5</color_from>
+				<color_to>0.65;0.25;0.65;0.5</color_to>
+			</definition>
+		</atmosphere_colors>
+
+		<!-- ### Planet properties ### -->
+		<configurations>
+			<definition>
+				<id>standard</id>
+				<planet_size_min>0.8</planet_size_min> <!-- on a scale from 0.5 to 2 -->
+				<planet_size_max>1.2</planet_size_max> <!-- on a scale from 0.5 to 2 -->
+				<clouds_rotation_min>0.01</clouds_rotation_min> <!-- rotation speed -->
+				<clouds_rotation_max>0.05</clouds_rotation_max> <!-- rotation speed -->
+				<planet_rotation_min>0.01</planet_rotation_min> <!-- rotation speed -->
+				<planet_rotation_max>0.05</planet_rotation_max> <!-- rotation speed -->
+			</definition>
+			<definition>
+				<id>large</id>
+				<planet_size_min>1.2</planet_size_min>
+				<planet_size_max>1.5</planet_size_max>
+				<clouds_rotation_min>0.01</clouds_rotation_min>
+				<clouds_rotation_max>0.05</clouds_rotation_max>
+				<planet_rotation_min>0.01</planet_rotation_min>
+				<planet_rotation_max>0.05</planet_rotation_max>
+			</definition>
+		</configurations>
+
+		<!-- ### List of possible planet types ### -->
+		<planet_types>
+			<definition>
+				<id>habitable_01</id>
+				<planet_texture>habitable_01</planet_texture>
+				<clouds_texture>habitable_01</clouds_texture>
+				<atmosphere_color>habitable_01</atmosphere_color>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>habitable_02</id>
+				<planet_texture>habitable_02</planet_texture>
+				<clouds_texture>habitable_01</clouds_texture>
+				<atmosphere_color>habitable_01</atmosphere_color>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>habitable_03</id>
+				<planet_texture>habitable_03</planet_texture>
+				<clouds_texture>habitable_01</clouds_texture>
+				<atmosphere_color>habitable_01</atmosphere_color>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>red_01</id>
+				<planet_texture>red_01</planet_texture>
+				<clouds_texture></clouds_texture>
+				<atmosphere_color>red_01</atmosphere_color>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>gasgiant_01</id>
+				<planet_texture>gasgiant_01</planet_texture>
+				<clouds_texture></clouds_texture>
+				<atmosphere_color>gasgiant_01</atmosphere_color>
+				<configuration>large</configuration>
+			</definition>
+			<definition>
+				<id>gasgiant_02</id>
+				<planet_texture>gasgiant_02</planet_texture>
+				<clouds_texture></clouds_texture>
+				<atmosphere_color>gasgiant_02</atmosphere_color>
+				<configuration>large</configuration>
+			</definition>
+			<definition>
+				<id>barren_01</id>
+				<planet_texture>barren_01</planet_texture>
+				<clouds_texture></clouds_texture>
+				<atmosphere_color>barren_01</atmosphere_color>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>desert_01</id>
+				<planet_texture>desert_01</planet_texture>
+				<clouds_texture></clouds_texture>
+				<atmosphere_color>desert_01</atmosphere_color>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>ice_01</id>
+				<planet_texture>ice_01</planet_texture>
+				<clouds_texture></clouds_texture>
+				<atmosphere_color>ice_01</atmosphere_color>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>water_01</id>
+				<planet_texture>water_01</planet_texture>
+				<clouds_texture>habitable_01</clouds_texture>
+				<atmosphere_color>habitable_01</atmosphere_color>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>alien_01</id>
+				<planet_texture>alien_01</planet_texture>
+				<clouds_texture></clouds_texture>
+				<atmosphere_color>alien_01</atmosphere_color>
+				<configuration>standard</configuration>
+			</definition>
+		</planet_types>
+
+	</data>
+</root>

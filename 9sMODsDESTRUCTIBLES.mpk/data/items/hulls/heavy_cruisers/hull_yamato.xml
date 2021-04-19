@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_yamato</id>
+		<title>Yamato</title>
+		<description>The Yamato class heavy cruiser was designed specifically for special forces operations. Its offensive and defensive capabilities as well as maneuverability provided unmatched versatility for any mission.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/hulls/hull_yamato.png</icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>50</shops_level>
+			<faction_filter></faction_filter>
+			<price>55000</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<effects>
+				<effect>
+					<id>piloting_heavy_cruisers_ability</id>
+					<value>1</value>
+				</effect>
+			</effects>
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>4800</effect_base>
+			</effect>
+			<effect>
+				<effect_type>armor_value</effect_type>
+				<effect_base>20</effect_base>
+			</effect>
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>100</effect_base>
+			</effect>
+			<effect>
+				<effect_type>maneuvering_percent</effect_type>
+				<effect_base>-40</effect_base> <!-- -45, +5 -->
+			</effect>
+			<effect>
+				<effect_type>acceleration_percent</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+
+			<gfx>
+				<world_model>hulls/hull_yamato.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_yamato/dif_256.jpg</diffuse>
+					<specular>hulls/hull_yamato/spec_256.jpg</specular>
+					<normal>hulls/hull_yamato/nrm_256.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_yamato.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_yamato/dif_1024.jpg</diffuse>
+					<specular>hulls/hull_yamato/spec_1024.jpg</specular>
+					<normal>hulls/hull_yamato/nrm_1024.jpg</normal>
+				</inventory_textures>
+				<world_scale>1</world_scale>
+				<inventory_scale>1</inventory_scale>
+			</gfx>
+
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>
+				<on_engine_silent>engine/engine_silent.ogg</on_engine_silent>
+				<on_engine_engaged>engine/engine_engaged.ogg</on_engine_engaged>
+			</sfx>
+
+			<physics>
+				<mass>1000</mass>
+				<shapes>
+					<shape>
+						<type>polygon</type>
+						<offset>0;0</offset>
+						<angle>0</angle>
+						<points>1.074;-0.0461 0.728;-0.3692 -0.05;-0.3819 -0.346;0.0095 -0.054;0.3819 0.311;0.3755</points>
+						<mass>8</mass>
+					</shape>
+					<shape>
+						<type>polygon</type>
+						<offset>0;0</offset>
+						<angle>0</angle>
+						<points>-0.465;0.9218 0.214;-0.0129 -0.441;-0.8106 -0.579;-0.8225 -0.858;0.0095</points>
+						<mass>8</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>3</consumables>
+				<devices>2</devices>
+				<boosters>4</boosters>
+			</equipment_slots>
+
+			<weapon_slots>
+			
+				<!-- left energy / ballistic -->
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>1;2</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>-15</direction>
+					<rotation_angle>145</rotation_angle>
+					<rotation_speed>60</rotation_speed>
+					<position>0.190;0.214;-0.121</position>
+				</weapon_slot>
+				
+				<!-- left bomb -->
+				<weapon_slot>
+					<id>1</id>
+					<slot_type>4</slot_type>
+					<slot_size>2</slot_size>
+					<display_type>0</display_type>
+					<direction>-180</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>-0.627;0.513;-0.004</position>
+				</weapon_slot>
+				
+				<!-- center bomb -->
+				<weapon_slot>
+					<id>2</id>
+					<slot_type>4</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>0</display_type>
+					<direction>-180</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>-0.670;0.000;0.050</position>
+				</weapon_slot>
+			
+				<!-- right energy / ballistic / missile -->
+				<weapon_slot>
+					<id>3</id>
+					<slot_type>1;2;3</slot_type>
+					<slot_size>2</slot_size>
+					<display_type>1</display_type>
+					<direction>40</direction>
+					<rotation_angle>100</rotation_angle>
+					<rotation_speed>90</rotation_speed>
+					<position>-0.418;-0.538;-0.096</position>
+				</weapon_slot>
+				
+			</weapon_slots>
+
+			<trails>
+				<default_color>0.2;0.5;1</default_color>
+				<!-- engine left -->
+				<trail>
+					<id>trail_engine_big</id>
+					<position_offset>-0.765;0.290;0.002</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				<!-- engine right -->
+				<trail>
+					<id>trail_engine_big</id>
+					<position_offset>-0.765;-0.290;0.002</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				<!-- engine left small -->
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.612;0.376;-0.086</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				<!-- engine right small -->
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.612;-0.376;-0.086</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				
+				<!-- reverse engines -->
+				<trail>
+					<id>trail_engine_reverse_medium</id>
+					<position_offset>-0.193;0.308;-0.069</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_reverse_medium</id>
+					<position_offset>-0.193;-0.308;-0.069</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				
+				<!-- rcs left front -->
+				<trail>
+					<id>trail_rcs_big</id>
+					<position_offset>0.033;0.410;0.002</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>4,6</engine_mode>
+				</trail>
+				<!-- rcs right front -->
+				<trail>
+					<id>trail_rcs_big</id>
+					<position_offset>0.033;-0.410;0.002</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>3,5</engine_mode>
+				</trail>
+				<!-- rcs left back -->
+				<trail>
+					<id>trail_rcs_big</id>
+					<position_offset>-0.796;0.078;-0.067</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>3,6</engine_mode>
+				</trail>
+				<!-- rcs right back -->
+				<trail>
+					<id>trail_rcs_big</id>
+					<position_offset>-0.796;-0.078;-0.067</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>4,5</engine_mode>
+				</trail>
+			</trails>
+			
+		</item_data>
+	</data>
+</root>

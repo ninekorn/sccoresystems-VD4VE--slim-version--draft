@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>scrap_metal_04</id>
+		<title>(Unused)</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/scrap_metal_04.obj</model>
+		<textures>
+			<diffuse>space_objects/scrap_metal/scrap_metal_04.png</diffuse>
+			<normal>space_objects/scrap_metal/scrap_metal_04.png</normal>
+			<specular>space_objects/scrap_metal/scrap_metal_04.png</specular>
+		</textures>
+	</gfx>
+
+	<sfx>
+		<!-- none-->
+	</sfx>
+
+	<data>
+					<scale_range>2;2</scale_range>
+		<rotation_range>-1.0;1.0</rotation_range>
+
+		<physics>
+			<mass>400</mass>
+			<shapes>
+			  <shape>
+    <type>circle</type>
+    <offset>0;0</offset>
+    <angle>0</angle>
+    <radius>0.05</radius>
+    <mass>8</mass>
+  </shape>
+			</shapes>
+		</physics>
+
+	</data>
+</root>

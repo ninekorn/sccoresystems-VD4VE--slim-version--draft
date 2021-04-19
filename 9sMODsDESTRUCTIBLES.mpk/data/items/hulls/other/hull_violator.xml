@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_violator</id>
+		<title>Violator</title>
+		<description>Kill it with fire before it lays eggs!</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/hulls/hull_violator.png</icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- possibly add alien tech skill -->
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>5000</effect_base>
+			</effect>
+			<effect>
+				<effect_type>armor_value</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>100</effect_base>
+			</effect>
+			<effect>
+				<effect_type>acceleration_percent</effect_type>
+				<effect_base>-50</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+			<gfx>
+				<world_model>hulls/hull_violator.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_violator/dif_256.jpg</diffuse>
+					<specular>hulls/hull_violator/spec_256.jpg</specular>
+					<normal>hulls/hull_violator/nrm_256.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_violator.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_violator/dif_1024.jpg</diffuse>
+					<specular>hulls/hull_violator/spec_1024.jpg</specular>
+					<normal>hulls/hull_violator/nrm_1024.jpg</normal>
+				</inventory_textures>
+				<world_scale>1.2</world_scale>
+				<inventory_scale>1</inventory_scale>
+			</gfx>
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_alien_01.ogg</sound>
+					<sound>explosions/on_explode_alien_02.ogg</sound>
+					<sound>explosions/on_explode_alien_03.ogg</sound>
+				</on_explode>
+				<on_engine_silent>engine/engine_silent.ogg</on_engine_silent>
+				<on_engine_engaged>engine/engine_engaged.ogg</on_engine_engaged>
+			</sfx>
+			
+			<physics>
+				<mass>1000</mass>
+				<shapes>
+					<shape>
+						<type>box</type>
+						<offset>0.075;0.002</offset>
+						<size>1.384;0.410</size>
+						<mass>8</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>-0.367;0.436</offset>
+						<size>0.179;0.507</size>
+						<mass>1</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>-0.367;-0.436</offset>
+						<size>0.179;0.507</size>
+						<mass>1</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>-0.039;0.685</offset>
+						<size>0.536;0.128</size>
+						<mass>1</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>-0.039;-0.685</offset>
+						<size>0.536;0.128</size>
+						<mass>1</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>1</consumables>
+				<devices>2</devices>
+				<boosters>4</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>3</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>30</rotation_angle>
+					<rotation_speed>360</rotation_speed>
+					<position>0.37;0.67;0.10</position>
+				</weapon_slot>
+				<weapon_slot>
+					<id>1</id>
+					<slot_type>1</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>30</rotation_angle>
+					<rotation_speed>360</rotation_speed>
+					<position>-0.399;0.160;-0.358</position>
+				</weapon_slot>
+				<weapon_slot>
+					<id>2</id>
+					<slot_type>1</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>30</rotation_angle>
+					<rotation_speed>360</rotation_speed>
+					<position>-0.399;-0.160;-0.358</position>
+				</weapon_slot>
+				<weapon_slot>
+					<id>3</id>
+					<slot_type>3</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>30</rotation_angle>
+					<rotation_speed>360</rotation_speed>
+					<position>0.37;-0.67;0.10</position>
+				</weapon_slot>
+			</weapon_slots>
+
+			<trails>
+				<default_color>0.25;0.8;0</default_color>
+
+				<!-- back -->
+				<trail>
+					<id>trail_engine_alien_big</id>
+					<position_offset>-0.64;0.10;-0.03</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_alien_big</id>
+					<position_offset>-0.64;-0.10;-0.03</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+			</trails>
+			
+			<blinks>
+				<!-- none -->
+			</blinks>
+			
+		</item_data>
+	</data>
+</root>

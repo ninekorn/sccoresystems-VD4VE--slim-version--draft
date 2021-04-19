@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>drone_combat_energy_rc_particle_discharge</id>
+		<title>drone_combat_energy_particle_discharge</title>
+		<description>drone combat</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/drone/droneHullV1.png</icon>
+	</gfx>
+
+	<data>
+		<type>100</type>
+		
+		<shops>
+			<shops_level>1</shops_level>
+			<faction_filter></faction_filter>
+			<faction_only>0</faction_only>
+			<faction_reputation>0</faction_reputation>
+			<price>1</price>
+		</shops>
+		
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- none -->
+		</requirements>
+
+		<effects>
+			<!-- none -->
+		</effects>
+
+		<item_data>
+			<durability>25000</durability>
+			<stack_size>10</stack_size>			
+		</item_data>
+
+	</data>
+</root>

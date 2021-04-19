@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>main_menu</id>
+	</header>
+
+	<data>
+		<hulls>
+			<!-- light frigates -->
+				<!--hull>hull_avalanche</hull-->
+				<!--hull>hull_banshee</hull-->
+				<!--hull>hull_endeavor</hull-->
+				<!--hull>hull_heretic</hull-->
+				<!-- <hull>hull_scarab</hull> (looks ugly in there) -->
+				<!--hull>hull_shuttle</hull-->
+				<hull>hull_outpostRoboticArmHigh0posX2_7644684314727783posY-23_017154693603516</hull>
+			
+			<!-- heavy frigates -->
+				<!--hull>hull_avalanche_mk2</hull-->
+				<!--hull>hull_banshee_mk2</hull-->
+				<!--hull>hull_boomerang</hull-->
+				<!--hull>hull_fang</hull-->
+				<!-- <hull>hull_freighter</hull> (looks too big in there) -->
+				<!-- <hull>hull_scarab_mk2</hull> (looks ugly in there) -->
+				<!--hull>hull_stingray</hull-->
+				<!--hull>hull_stryker</hull-->
+			
+			<!-- light cruisers -->
+				<!-- <hull>hull_asteria</hull> (looks too big in there) -->
+				<!-- <hull>hull_crab</hull> (looks ugly in there) -->
+				<!-- <hull>hull_crab_order</hull> (faction ship, no need to show) -->
+				<!--hull>hull_orca</hull-->
+				<!-- <hull>hull_orca_freedom</hull> (faction ship, no need to show) -->
+				<!--hull>hull_stingray_mk2</hull-->
+				<!-- <hull>hull_stingray_mk2</hull> (faction ship, no need to show) -->
+			
+			<!-- heavy cruisers -->
+				<!--<hull>hull_aurora</hull> (looks ugly in there) -->
+				<!--hull>hull_death_bringer</hull-->
+				<!-- <hull>hull_hammer</hull> (looks ugly in there) -->
+				<!--hull>hull_yamato</hull-->
+				<!-- <hull>hull_wasp</hull> (looks ugly in there) -->		
+			
+		</hulls>
+		
+		<planets>
+			<!--planet>habitable_01</planet-->
+			<!--planet>habitable_02</planet-->
+			<!--planet>habitable_03</planet-->
+			<!--planet>red_01</planet-->
+			<!--planet>gasgiant_01</planet-->
+			<!--planet>gasgiant_02</planet-->
+			<!--planet>barren_01</planet-->
+			<!--planet>desert_01</planet-->
+			<!--planet>ice_01</planet-->
+			<!--planet>water_01</planet-->
+			<planet>magma_01</planet>
+		</planets>
+	</data>
+</root>

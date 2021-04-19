@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_turret_xengatarn</id>
+		<title>Xengatarn turret</title>
+		<description>You shouldn't have seen this, you know.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon></icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- none -->
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>3200</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_self_special</effect_type>
+				<effect_base>-0.5</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_target_special</effect_type>
+				<effect_base>0.25</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+			<gfx>
+				<world_model>hulls/hull_turret_xengatarn.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_turret_xengatarn/dif_256.jpg</diffuse>
+					<specular>hulls/hull_turret_xengatarn/spec_256.jpg</specular>
+					<normal>hulls/hull_turret_xengatarn/nrm_256.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_turret_xengatarn.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_turret_xengatarn/dif_256.jpg</diffuse>
+					<specular>hulls/hull_turret_xengatarn/spec_256.jpg</specular>
+					<normal>hulls/hull_turret_xengatarn/nrm_256.jpg</normal>
+				</inventory_textures>
+				<world_scale>1.5</world_scale>
+				<inventory_scale>1.5</inventory_scale>
+			</gfx>
+			
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_alien_01.ogg</sound>
+					<sound>explosions/on_explode_alien_02.ogg</sound>
+					<sound>explosions/on_explode_alien_03.ogg</sound>
+				</on_explode>				
+			</sfx>
+			
+			<physics>
+				<mass>9001</mass>
+				<shapes>
+					<shape>
+						<type>circle</type>
+						<offset>0.000;0.000</offset>
+						<radius>0.3</radius>
+						<mass>8</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>0</consumables>
+				<devices>0</devices>
+				<boosters>0</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>3</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>360</rotation_angle>
+					<rotation_speed>120</rotation_speed>
+					<position>0.000;0.000;-0.153</position>
+				</weapon_slot>
+			</weapon_slots>
+
+			<trails>
+				<!-- none -->
+			</trails>
+			
+			<blinks>
+				<!-- todo: add later -->
+			</blinks>
+			
+		</item_data>
+	</data>
+</root>

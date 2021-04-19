@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>generic_services_market_terminal_buy</id>
+		<title>Buy on the Market</title>
+		<enabled>1</enabled>
+	</header>
+
+	<data>
+		<category>services</category>
+		<variables>
+			
+		</variables>
+		<flags>
+			<flag>add_on_init</flag>
+		</flags>
+		
+		<singleplayer>1</singleplayer>
+		<multiplayer>1</multiplayer>
+
+	</data>
+</root>

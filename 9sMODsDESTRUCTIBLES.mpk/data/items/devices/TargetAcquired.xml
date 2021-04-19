@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>TargetAcquired</id>
+		<title>NPC Talk Device</title>
+		<description>The drone can say words but i am not sure if there is positional sounds in VoidExpanse. Still, there are otherWays.....</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/devices/device_mining_civilian.png</icon>
+	</gfx>
+
+	<data>
+		<type>9</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+		
+		<flags>
+
+		</flags>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- none -->
+		</requirements>
+
+		<effects>
+			<!-- none -->
+		</effects>
+
+		<item_data>
+
+			<durability>25000</durability> <!-- max durability -->
+
+			<cooldown>0</cooldown> <!-- cooldown in seconds after initiation of usage -->
+
+			<!-- DEVICE ACTIVATION
+				determines a way the module can be activated
+			-->
+			<target>1</target> <!-- 0- N/A, 1- self, 2- area (around self), 3- object, 4- coordinates -->
+			<target_parameters>
+				<range>10</range> <!-- used for all except "self" and "area" mode. -->
+				<area>10</area>
+				<!-- determines area of effect on specified coordinates. only for "area", "target", "coordinates" -->
+				<target_filter>asteroid</target_filter>
+				<!-- only for "target" mode. For target can be specified: asteroid, ship, crate, jumpgate, base -->
+			</target_parameters>
+
+			<!-- DEVICE ACTION
+				determines how module effect should be applied
+			-->
+			<action_type>1</action_type> <!-- 0- N/A, 1- immediate, 2- per frame, 3- on complete -->
+			<!-- the following configuration is only applicable for "per frame" and "on complete" modes -->
+			<action_parameters>
+				<duration>0</duration> <!-- 0 for infinite -->
+				<cancel_on_move>2</cancel_on_move> <!-- module is disabled when ship moves -->
+				<cancel_on_take_damage>2</cancel_on_take_damage> <!-- module is disabled when ship takes damage -->
+				<cancel_on_deactivate>2</cancel_on_deactivate> <!-- module is disabled when user activates it again (in this case deactivates) -->
+			</action_parameters>
+
+			<!-- CUSTOM PARAMETERS
+				can be any number parameters, also accessible through scripts
+			-->
+			<custom_parameters>
+				<speed>100</speed>
+				<amount>75</amount>
+				<energy>40</energy>
+			</custom_parameters>
+
+			<!-- script definition for this module, must be valid filename -->
+			<script>TargetAcquired.js</script>
+
+		</item_data>
+	</data>
+</root>

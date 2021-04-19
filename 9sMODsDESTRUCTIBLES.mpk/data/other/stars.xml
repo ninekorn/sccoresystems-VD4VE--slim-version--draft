@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>stars</id>
+	</header>
+
+	<data>
+
+		<star_textures>
+			<definition>
+				<id>ordinary</id>
+				<texture>stars/star_001.png</texture>
+			</definition>
+		</star_textures>
+
+		<star_colors>
+			<definition>
+				<id>yellow</id>
+				<color_from>1;0.5;0.0</color_from>
+				<color_to>1;0.5;0.0</color_to>
+			</definition>
+			<definition>
+				<id>red</id>
+				<color_from>1;0.2;0.0</color_from>
+				<color_to>1;0.2;0.0</color_to>
+			</definition>
+			<definition>
+				<id>blue</id>
+				<color_from>0.2;0.45;1</color_from>
+				<color_to>0.2;0.45;1</color_to>
+			</definition>
+		</star_colors>
+
+		<corona_colors>
+			<definition>
+				<id>yellow</id>
+				<color_from>1;0.5;0.0</color_from>
+				<color_to>1;0.5;0.0</color_to>
+			</definition>
+			<definition>
+				<id>red</id>
+				<color_from>1;0.5;0.0</color_from>
+				<color_to>1;0.5;0.0</color_to>
+			</definition>
+			<definition>
+				<id>blue</id>
+				<color_from>0.76;0.82;1</color_from>
+				<color_to>0.76;0.82;1</color_to>
+			</definition>
+		</corona_colors>
+
+		<flares_textures>
+			<definition>
+				<id>standard</id>
+				<texture>stars/flares_001.png</texture>
+				<intensity>1</intensity>
+			</definition>
+		</flares_textures>
+
+		<configurations>
+			<definition>
+				<id>small</id>
+				<star_size_min>0.6</star_size_min>
+				<star_size_max>0.7</star_size_max>
+			</definition>
+			<definition>
+				<id>standard</id>
+				<star_size_min>0.7</star_size_min>
+				<star_size_max>0.85</star_size_max>
+			</definition>			
+			<definition>
+				<id>big</id>
+				<star_size_min>0.85</star_size_min>
+				<star_size_max>1.0</star_size_max>
+			</definition>
+		</configurations>
+
+		<!-- possible star types -->
+		<star_types>
+			<definition>
+				<id>sun_yellow</id>
+				<star_texture>ordinary</star_texture>
+				<star_color>yellow</star_color>
+				<corona_color>yellow</corona_color>
+				<flares_texture>standard</flares_texture>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>sun_yellow_small</id>
+				<star_texture>ordinary</star_texture>
+				<star_color>yellow</star_color>
+				<corona_color>yellow</corona_color>
+				<flares_texture>standard</flares_texture>
+				<configuration>small</configuration>
+			</definition>
+			<definition>
+				<id>sun_blue</id>
+				<star_texture>ordinary</star_texture>
+				<star_color>blue</star_color>
+				<corona_color>blue</corona_color>
+				<flares_texture>standard</flares_texture>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>sun_blue_small</id>
+				<star_texture>ordinary</star_texture>
+				<star_color>blue</star_color>
+				<corona_color>blue</corona_color>
+				<flares_texture>standard</flares_texture>
+				<configuration>small</configuration>
+			</definition>
+			<definition>
+				<id>sun_red</id>
+				<star_texture>ordinary</star_texture>
+				<star_color>red</star_color>
+				<corona_color>red</corona_color>
+				<flares_texture>standard</flares_texture>
+				<configuration>standard</configuration>
+			</definition>
+			<definition>
+				<id>sun_red_big</id>
+				<star_texture>ordinary</star_texture>
+				<star_color>red</star_color>
+				<corona_color>red</corona_color>
+				<flares_texture>standard</flares_texture>
+				<configuration>big</configuration>
+			</definition>
+		</star_types>
+
+	</data>
+</root>

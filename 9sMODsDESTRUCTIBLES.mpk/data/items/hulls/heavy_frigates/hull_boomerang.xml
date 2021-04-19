@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_boomerang</id>
+		<title>Boomerang</title>
+		<description>Boomerang is one of the early designs for combat ships. Not the best, but it remains quite cheap and very popular among pirates and other fighters due to its versatility and a large number of weapon hardpoints for extra firepower.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/hulls/hull_boomerang.png</icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>20</shops_level>
+			<faction_filter></faction_filter>
+			<price>5600</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<effects>
+				<effect>
+					<id>piloting_heavy_frigates_ability</id>
+					<value>1</value>
+				</effect>
+			</effects>
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>1800</effect_base>
+			</effect>
+			<effect>
+				<effect_type>armor_value</effect_type>
+				<effect_base>12</effect_base>
+			</effect>
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>100</effect_base>
+			</effect>
+			<effect>
+				<effect_type>maneuvering_percent</effect_type>
+				<effect_base>5</effect_base> <!-- -10 base & +15 bonus = +5 -->
+			</effect>
+		</effects>
+
+		<item_data>
+
+			<gfx>
+				<world_model>hulls/hull_boomerang.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_boomerang/dif_256.jpg</diffuse>
+					<specular>hulls/hull_boomerang/spec_256.jpg</specular>
+					<normal>hulls/hull_boomerang/nrm_256.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_boomerang.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_boomerang/dif_1024.jpg</diffuse>
+					<specular>hulls/hull_boomerang/spec_1024.jpg</specular>
+					<normal>hulls/hull_boomerang/nrm_1024.jpg</normal>
+				</inventory_textures>
+				<world_scale>1</world_scale>
+				<inventory_scale>1</inventory_scale>
+			</gfx>
+
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>
+				<on_engine_silent>engine/engine_silent.ogg</on_engine_silent>
+				<on_engine_engaged>engine/engine_engaged.ogg</on_engine_engaged>
+			</sfx>
+
+			<physics>
+				<mass>1000</mass>
+				<shapes>
+					<shape>
+						<type>box</type>
+						<offset>0.017;-0.265</offset>
+						<size>0.965;0.300</size>
+						<mass>1</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>0.012;-0.252</offset>
+						<size>0.740;0.485</size>
+						<mass>10</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>0.078;-0.538</offset>
+						<size>0.193;0.278</size>
+						<mass>1</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>0.108;0.620</offset>
+						<size>0.400;1.447</size>
+						<mass>10</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>-0.170;1.273</offset>
+						<size>0.179;0.128</size>
+						<mass>1</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>1</consumables>
+				<devices>2</devices>
+				<boosters>2</boosters>
+			</equipment_slots>
+
+			<weapon_slots>
+				<!-- wing weapon 1 -->
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>1</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>90</rotation_angle>
+					<rotation_speed>250</rotation_speed>
+					<position>0.160;0.270;-0.097</position>
+				</weapon_slot>
+				
+				<!-- wing weapon 2 -->
+				<weapon_slot>
+					<id>1</id>
+					<slot_type>1</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>90</rotation_angle>
+					<rotation_speed>250</rotation_speed>
+					<position>0.139;0.577;-0.078</position>
+				</weapon_slot>
+				
+				<!-- wing weapon 3 -->
+				<weapon_slot>
+					<id>2</id>
+					<slot_type>1</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>90</rotation_angle>
+					<rotation_speed>250</rotation_speed>
+					<position>0.127;0.880;-0.077</position>
+				</weapon_slot>
+				
+				<!-- main weapon -->
+				<weapon_slot>
+					<id>3</id>
+					<slot_type>2</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>0.40;-0.27;0.11</position>
+				</weapon_slot>
+				
+			</weapon_slots>
+
+			<trails>
+				<default_color>0.33;0.25;1</default_color>
+				<!-- left engine -->
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.32;-0.49;0.14</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				<!-- right right engine -->
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.32;-0.05;0.14</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				<!-- center engine -->
+				<trail>
+					<id>trail_engine_medium</id>
+					<position_offset>-0.475;-0.27;0.003</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				<!-- wing engine -->
+				<trail>
+					<id>trail_engine_medium</id>
+					<position_offset>-0.265;1.27;-0.008</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				
+				<!-- reverse engines -->
+				<trail>
+					<id>trail_engine_reverse_medium</id>
+					<position_offset>0.38;-0.10;0.00</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_reverse_medium</id>
+					<position_offset>0.38;-0.44;0.00</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				
+				<!-- rcs left front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.23;-0.49;-0.10</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>3,5</engine_mode>
+				</trail>
+				<!-- rcs left back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.18;-0.46;-0.07</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>4,5</engine_mode>
+				</trail>
+				<!-- rcs right front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.23;-0.05;-0.10</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>4,6</engine_mode>
+				</trail>
+				<!-- rcs right back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.18;-0.07;-0.07</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>3,6</engine_mode>
+				</trail>
+			</trails>
+			
+			<blinks>
+				<blink>
+					<position_offset>0.31;0.90;0.05</position_offset>
+					<size>1</size>
+					<delay>0</delay>
+					<duration>0.3</duration>
+					<interval>1.5</interval>
+					<color>0;1;0;1</color>
+					<light_position_offset>0.31;0.90;-0.4</light_position_offset>
+					<light_range>1</light_range>
+					<light_intensity>0.5</light_intensity>
+					<light_color>0;1;0;1</light_color>
+				</blink>
+			</blinks>
+			
+		</item_data>
+	</data>
+</root>

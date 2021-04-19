@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>marketBUYTypeBoosters</id>
+		<title>Click to see the list of boosters!</title>
+		<enabled>1</enabled>
+	</header>
+
+	<data>
+		<category>quests</category>
+		<variables>
+		</variables>
+		<flags>
+			<flag>add_on_init</flag>
+		</flags>
+
+		<singleplayer>1</singleplayer>
+		<multiplayer>1</multiplayer>	
+	</data>
+</root>

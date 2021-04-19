@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>weapon_drone_combat_missile_rc_unguided</id>
+		<title>Drone missile unguided</title>
+		<description>Fast unguided rocket. Unlike other heavier counterparts this one is extremely fast, which is what it's valued for.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/weapons_03_missile/weapon_dart_b20.png</icon>
+	</gfx>
+
+	<data>
+		<type>11</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<effects>
+				<effect>
+					<id>use_missile_weapons_ability</id>
+					<value>1</value>
+				</effect>
+			</effects>
+		</requirements>
+
+		<effects>
+			<!-- none -->
+		</effects>
+
+		<item_data>
+			<durability>25000</durability>
+			<gfx>
+				<model>turrets/missile_turret_01.obj</model>
+				<textures>
+					<diffuse>turrets/missile_turret_01/dif_256.jpg</diffuse>
+					<specular>turrets/missile_turret_01/spec_256.jpg</specular>
+					<normal>turrets/missile_turret_01/nrm_256.jpg</normal>
+				</textures>
+			</gfx>
+			<sfx>
+				<on_prepare></on_prepare>
+				<on_complete></on_complete>
+				<on_recharge>items/generic_on_recharge.ogg</on_recharge>
+				<on_empty>items/generic_on_empty.ogg</on_empty>
+				<on_not_ready>items/generic_on_not_ready.ogg</on_not_ready>
+			</sfx>
+			<weapon>
+				<durability_per_shot>5</durability_per_shot>
+				<weapon_type>3</weapon_type>
+				<weapon_size>1</weapon_size>
+				<fire_sequence_delay_sec>1.4</fire_sequence_delay_sec>
+				<fire_sequence_energy>20</fire_sequence_energy>
+				<ammo_max>40</ammo_max>
+				<ammo_per_shot>1</ammo_per_shot>
+				<ammo_recharge_sec>0</ammo_recharge_sec>
+				<ammo_recharge_energy>0</ammo_recharge_energy>
+				<ammo_auto_recharge_at_station>1</ammo_auto_recharge_at_station>
+				<ammo_recharge_price>0</ammo_recharge_price>
+				<ammo_meter>1</ammo_meter>
+			</weapon>
+			<projectiles>
+				<projectile>
+					<quantity>1</quantity>
+					<sfx>
+						<on_shoot>items/missile_on_shoot.ogg</on_shoot>
+						<on_explode>
+							<sound>items/missile_on_explode_01.ogg</sound>
+							<sound>items/missile_on_explode_02.ogg</sound>
+						</on_explode>
+						<on_hit_body>items/missile_on_hit_body.ogg</on_hit_body>
+						<on_hit_shield>items/missile_on_hit_shield.ogg</on_hit_shield>
+					</sfx>
+					<gfx>
+						<model>
+							<model>projectiles/rocket_light.obj</model>
+							<textures>
+								<diffuse>projectiles/rocket_light_dif.jpg</diffuse>
+								<color>1;1;1;1</color>
+							</textures>
+							<scale>1.4</scale>
+						</model>
+						<trails>
+							<default_color>1;0.75;0</default_color>							
+							<trail>
+								<id>trail_missile_medium</id>
+								<position_offset>-0.15;0;0</position_offset>
+								<position_rotation>0;0;180</position_rotation>
+								<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+								<engine_mode>2</engine_mode>				
+							</trail>
+						</trails>
+						<fire_origin>0.141;0;0</fire_origin>
+					</gfx>
+					<cancel>0</cancel>
+					<shot_delay>0</shot_delay>
+					<angle>0</angle>
+					<spread>0</spread>
+					<dmg>25</dmg>
+					<dmg_type>3</dmg_type>
+					<distance>25</distance>
+					<max_distance>25</max_distance>
+					<impulse>1.2</impulse>
+					<!-- projectile type: direct_hit=1, ray=2, missile=3, bullet=4 -->
+					<projectile_type>3</projectile_type>
+					<duration>0</duration>
+					<homing>0</homing>
+					<homing_delay>0</homing_delay>
+					<speed>28</speed>
+					<radius>1</radius>
+					<max_radius>2</max_radius>
+					<structure>2</structure>
+
+					<physics>
+						<mass>5</mass>
+						<shapes>
+							<shape>
+								<type>box</type>
+								<offset>0.015;0.000</offset>
+								<angle>0</angle>
+								<size>0.383;0.153</size>
+								<mass>1</mass>
+							</shape>
+						</shapes>
+					</physics>
+				</projectile>
+			</projectiles>
+
+		</item_data>
+	</data>
+</root>

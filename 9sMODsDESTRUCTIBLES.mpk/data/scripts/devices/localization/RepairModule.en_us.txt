@@ -1,0 +1,10 @@
+﻿$n0001:       Repair is not required
+$n0002:       Repair is not required. Structure is at maximum level.
+$n0003:       Repair failed
+$n0004:       Not enough energy.
+$n0005:       Repair failed
+$n0006:       Not enough ore in cargo to use in repairs. Required %amount% glepsite.
+$n0007:       Repair failed
+$n0008:       Not enough ore in cargo to use in repairs. Required %amount% cyactite.
+$n0009:       Repair failed
+$n0010:       Not enough ore in cargo to use in repairs. Required %amount% fraclasite.

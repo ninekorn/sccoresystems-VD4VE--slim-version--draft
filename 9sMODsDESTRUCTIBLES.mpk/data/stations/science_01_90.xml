@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>science_01_90</id>
+		<title>Science station</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>stations/science_01.obj</model>
+		<textures>
+			<diffuse>stations/science_01/dif_2048.png</diffuse>
+			<specular>stations/science_01/spec_2048.png</specular>
+			<normal>stations/science_01/nrm_2048.png</normal>
+			<illumination>stations/science_01/ilum_1024.png</illumination>
+		</textures>
+		<scale>1</scale>
+		<rotation>90</rotation>
+	</gfx>
+
+	<sfx>
+		<!-- none -->
+	</sfx>
+
+	<data>
+
+		<playlist>playlist_special_station_science</playlist>
+
+		<background_texture>stations/hangar_01.jpg</background_texture>
+
+		<sort>300</sort>
+		
+		<storage_capacity>1000</storage_capacity>
+
+		<stock_generation>
+			<!-- hulls -->
+			<group>
+				<min>4</min>
+				<max>8</max>
+				<items>
+					<item>
+						<type>1</type>
+						<min>4</min>
+						<max>8</max>
+					</item>
+				</items>
+			</group>
+			<!-- primary equipment -->
+			<group>
+				<min>10</min>
+				<max>25</max>
+				<items>
+					<item>
+						<type>2</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>3</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>4</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>5</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>6</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>7</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+					<item>
+						<type>8</type>
+						<min>2</min>
+						<max>5</max>
+					</item>
+				</items>
+			</group>
+			<!-- secondary equipment -->
+			<group>
+				<min>10</min>
+				<max>20</max>
+				<items>
+					<item>
+						<type>9</type>
+						<min>0</min>
+						<max>20</max>
+					</item>
+					<item>
+						<type>10</type>
+						<min>0</min>
+						<max>20</max>
+					</item>
+				</items>
+			</group>
+			<!-- weapons -->
+			<group>
+				<min>3</min>
+				<max>7</max>
+				<items>
+					<item>
+						<type>11</type>
+						<min>3</min>
+						<max>7</max>
+					</item>
+				</items>
+			</group>
+			<!-- consumables -->
+			<group>
+				<min>6</min>
+				<max>12</max>
+				<items>
+					<item>
+						<type>101</type>
+						<min>3</min>
+						<max>7</max>
+					</item>
+				</items>
+			</group>
+			<!-- objects -->
+			<group>
+				<min>1</min>
+				<max>10</max>
+				<items>
+					<item>
+						<type>100</type>
+						<min>10</min>
+						<max>20</max>
+					</item>
+				</items>
+			</group>
+		</stock_generation>
+
+		<entrance>
+			<entry_available_areas>
+				<shape>
+    <type>box</type>
+    <offset>0;0</offset>
+    <angle>0</angle>
+    <size>2;2</size>
+  </shape>
+			</entry_available_areas>
+			<entry_start_areas>
+				<shape>
+    <type>box</type>
+    <offset>0;0</offset>
+    <angle>0</angle>
+    <size>2;2</size>
+  </shape>
+			</entry_start_areas>
+
+			<undocking_points>
+				<point>0;3</point>
+				<point>3;0</point>
+				<point>3;3</point>
+				<point>-3;0</point>
+				<point>-3;3</point>
+				<point>-3;3</point>
+			</undocking_points>
+		</entrance>
+		<physics>
+			<mass>9001</mass>
+			<shapes>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>7.850;-1.300 7.850;1.000 9.250;4.150 11.900;1.450 11.900;-1.300</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>7.600;3.650 7.600;4.500 8.350;5.250 9.225;4.150 8.600;2.700</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>8.600;13.400 6.500;18.000 11.900;18.000 11.900;14.500 9.500;12.000</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>8.300;10.850 7.600;11.550 7.600;12.250 8.620;13.350 9.475;12.000</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>-4.500;7.000 -5.150;7.650 -5.150;8.350 -4.500;9.000 5.150;9.000 5.850;8.350 5.850;7.650 5.250;7.000</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-14.450;8.000</offset>
+    <angle>0</angle>
+    <size>10.000;8.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>1.500;22.250</offset>
+    <angle>90</angle>
+    <size>10.000;8.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>1.500;-6.300</offset>
+    <angle>90</angle>
+    <size>10.000;8.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-11.250;8.000</offset>
+    <angle>0</angle>
+    <size>3.750;18.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.400;-3.250</offset>
+    <angle>0</angle>
+    <size>23.000;4.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.400;19.250</offset>
+    <angle>0</angle>
+    <size>23.000;4.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>-9.000;19.000</offset>
+    <angle>0</angle>
+    <points>-4.100;-2.000 -2.150;2.250 4.750;-1.000 -0.850;-6.500</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>-9.000;-1.000</offset>
+    <angle>0</angle>
+    <points>-4.100;0.000 -0.850;4.500 4.350;-1.000 -2.100;-4.250</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>-30.500;7.750</offset>
+    <angle>0</angle>
+    <radius>14.000</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>1.500;38.000</offset>
+    <angle>0</angle>
+    <radius>14.000</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>1.500;-22.500</offset>
+    <angle>0</angle>
+    <radius>14.000</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>7.000;-1.000</offset>
+    <angle>40</angle>
+    <size>4.000;2.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>7.000;17.000</offset>
+    <angle>320</angle>
+    <size>4.000;2.000</size>
+    <mass>8</mass>
+  </shape>
+
+			</shapes>
+		</physics>
+
+		<blinks>
+			<!-- left side -->
+
+		</blinks>
+	</data>
+</root>

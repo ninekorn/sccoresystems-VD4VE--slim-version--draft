@@ -1,0 +1,6 @@
+﻿$n0001:       Planet scanner
+$n0002:       Planet was successfully scanned. Total scanned planets: %scanned%.
+$n0003:       Planet scanner
+$n0004:       This planet has already been scanned.
+$n0005:       Planet scanner
+$n0006:       There are no planets in device radius.

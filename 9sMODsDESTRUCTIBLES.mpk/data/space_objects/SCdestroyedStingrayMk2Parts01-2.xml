@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>SCdestroyedStingrayMk2Parts01-2</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/destroyed_hulls/stingraymk2/SCdestroyedStingrayMk2Parts01-2.obj</model>
+		<textures>
+			<diffuse>space_objects/destroyed_hulls/stingraymk2/SCdestroyedStingrayMk2Parts01-2.png</diffuse>
+			<specular>space_objects/destroyed_hulls/stingraymk2/SCdestroyedStingrayMk2Parts01-2.png</specular>
+			<normal>space_objects/destroyed_hulls/stingraymk2/SCdestroyedStingrayMk2Parts01-2.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+	<data>
+		
+			<scale_range>1.0;1.0</scale_range>
+		
+			<rotation_range>-1.0;1.0</rotation_range>
+		
+			<physics>
+				<mass>6.5</mass>
+				<shapes>
+					<shape>
+    <type>box</type>
+    <offset>0.000;-0.15</offset>
+    <angle>50</angle>
+    <size>0.700;0.400</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.275;0.450</offset>
+    <angle>0</angle>
+    <size>0.400;0.500</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>0.450;0.01</offset>
+    <angle>0</angle>
+    <radius>0.200</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>0.300;0.01</offset>
+    <angle>0</angle>
+    <radius>0.200</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>0.650;0.05</offset>
+    <angle>0</angle>
+    <radius>0.100</radius>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0.45;0</offset>
+    <angle>0</angle>
+    <size>0.7;0.45</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>circle</type>
+    <offset>-0.35;-0.25</offset>
+    <angle>0</angle>
+    <radius>0.3</radius>
+    <mass>8</mass>
+  </shape>
+				</shapes>
+			</physics>
+	</data>
+</root>

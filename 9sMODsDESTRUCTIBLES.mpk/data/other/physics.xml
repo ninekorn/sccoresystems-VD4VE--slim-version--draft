@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>physics</id>
+	</header>
+
+	<data>
+
+		<common>
+			<rotation_modifier>0.0025</rotation_modifier>
+			<acceleration_modifier>1</acceleration_modifier>
+			<!--acceleration_modifier>1</acceleration_modifier-->
+		</common>
+	
+		<ships>
+			<linear_damping>0.15</linear_damping>
+			<angular_damping>0.1</angular_damping>
+			<friction>0.1</friction>
+			<restitution>0.5</restitution>
+		</ships>
+		
+		<asteroids>
+			<linear_damping>0.5</linear_damping>
+			<angular_damping>10</angular_damping>
+			<friction>0.1</friction>
+			<restitution>0.2</restitution>
+		</asteroids>
+		
+		<debris>
+			<linear_damping>0.5</linear_damping>
+			<angular_damping>10</angular_damping>
+			<friction>0.1</friction>
+			<restitution>0.2</restitution>
+		</debris>
+		
+		<crates>
+			<linear_damping>0.5</linear_damping>
+			<angular_damping>10</angular_damping>
+			<friction>0.1</friction>
+			<restitution>0.2</restitution>
+		</crates>
+
+	</data>
+</root>

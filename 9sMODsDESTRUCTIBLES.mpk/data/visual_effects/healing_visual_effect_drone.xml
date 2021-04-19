@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>healing_visual_effect_drone</id>
+		<enabled>1</enabled>
+	</header>
+	<data>
+	
+		<ray>
+			<gfx>				
+				<duration>1</duration>
+				<duration_prepare>0.1</duration_prepare>
+				<duration_complete>0.1</duration_complete>
+				<width>2</width>
+				<textures>
+					<texture>
+						<diffuse>projectiles/beam_fx.png</diffuse>
+						<color>0;1;0;0.25</color>
+						<speed>0.5</speed>
+					</texture>
+					<texture>
+						<diffuse>projectiles/beam_ray.png</diffuse>
+						<color>0;1;0;0.25</color>
+						<speed>1</speed>
+					</texture>
+				</textures>
+				<particles>
+					<particle>
+						<color>0;1;0;0.25</color>
+						<density>4</density>
+						<size>0.5</size>
+						<diffuse>projectiles/particle_01.png</diffuse>
+					</particle>
+				</particles>
+				<particle_hit_body>
+					<color>1;1;1;1</color>
+					<density>1</density>
+				</particle_hit_body>
+				<!--<special_particles>mining</special_particles>-->
+			</gfx>
+			<sfx>
+				<on_prepare>special/mining_start.ogg</on_prepare>
+				<on_complete>special/mining_complete.ogg</on_complete>
+				<on_shoot>special/mining_process.ogg</on_shoot>
+			</sfx>
+		</ray>
+		
+	</data>
+</root>

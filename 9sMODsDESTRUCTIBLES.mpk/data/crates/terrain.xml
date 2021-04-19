@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>terrain</id>
+		<title>(Unused)</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>crates/terrain.obj</model>
+		<textures>
+			<diffuse>crates/terrain/dif_512.png</diffuse>
+			<specular>crates/terrain/dif_512.png</specular>
+			<normal>crates/terrain/dif_512.png</normal>
+		</textures>
+	</gfx>
+
+	<sfx>
+		<!-- none-->
+	</sfx>
+
+	<data>
+	
+		<movable>0</movable>
+		<persistent>1</persistent>
+		<instanced>1</instanced>
+		<show_on_map>1</show_on_map>
+
+
+
+		<scale_range>1;1</scale_range>
+		<rotation_range>0;0</rotation_range>
+
+		<physics>
+			<mass>20</mass>
+			<shapes>
+				<shape>
+					<type>box</type>
+					<offset>0.000;0.000</offset>
+					<angle>0</angle>
+					<size>0.1;0.1</size>
+					<mass>1</mass>
+				</shape>
+			</shapes>
+		</physics>
+
+	</data>
+</root>

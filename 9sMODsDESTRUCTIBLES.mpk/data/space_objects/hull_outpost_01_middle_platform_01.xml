@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_outpost_01_middle_platform_01</id>
+		<title>(Unused)</title>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/hull_outpost_01_middle_platform.obj</model>
+		<textures>
+			<diffuse>space_objects/debris_generic_barrel_01/dif_256_red.jpg</diffuse>
+			<normal>space_objects/debris_generic_barrel_01/nrm_256.jpg</normal>
+			<specular>space_objects/debris_generic_barrel_01/spec_256.jpg</specular>
+		</textures>
+	</gfx>
+
+	<sfx>
+		<!-- none-->
+	</sfx>
+
+	<data>
+		<scale_range>1;1</scale_range>
+		<rotation_range>0;0</rotation_range>
+
+		<physics>
+			<mass>20</mass>
+			<shapes>
+				<shape>
+					<type>box</type>
+					<offset>0.000;0.000</offset>
+					<angle>0</angle>
+					<size>1.679;2.987</size>
+					<mass>8</mass>
+				</shape>
+			</shapes>
+		</physics>
+
+	</data>
+</root>

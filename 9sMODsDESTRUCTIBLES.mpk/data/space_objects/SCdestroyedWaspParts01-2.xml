@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>SCdestroyedWaspParts01-2</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/destroyed_hulls/wasp/SCdestroyedWaspParts01-2.obj</model>
+		<textures>
+			<diffuse>space_objects/destroyed_hulls/wasp/SCdestroyedWaspParts01-2.png</diffuse>
+			<specular>space_objects/destroyed_hulls/wasp/SCdestroyedWaspParts01-2.png</specular>
+			<normal>space_objects/destroyed_hulls/wasp/SCdestroyedWaspParts01-2.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+	<data>
+		
+			<scale_range>1.0;1.0</scale_range>
+		
+			<rotation_range>-1.0;1.0</rotation_range>
+		
+			<physics>
+				<mass>6.5</mass>
+				<shapes>
+					<shape>
+    <type>box</type>
+    <offset>-0.025;0.025</offset>
+    <angle>0</angle>
+    <size>0.35;0.6</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0.25;0.025</offset>
+    <angle>0</angle>
+    <size>0.15;0.45</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.15;0.025</offset>
+    <angle>0</angle>
+    <size>0.5;0.45</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0.3;0.02</offset>
+    <angle>0</angle>
+    <size>0.15;0.2</size>
+    <mass>8</mass>
+  </shape>
+				</shapes>
+			</physics>
+	</data>
+</root>

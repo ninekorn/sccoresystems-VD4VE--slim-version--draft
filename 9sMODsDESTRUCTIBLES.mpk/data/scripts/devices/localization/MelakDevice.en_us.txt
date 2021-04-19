@@ -1,0 +1,8 @@
+﻿$n0001:       C-Field disruptor started
+$n0002:       Do not move or take any damage!
+$n0003:       C-Field disruptor failed
+$n0004:       No C-Field emitter within range.
+$n0005:       C-Field disruptor failed
+$n0006:       No C-Field emitter within range.
+$n0007:       C-Field disruptor failed
+$n0008:       The action was interrupted.

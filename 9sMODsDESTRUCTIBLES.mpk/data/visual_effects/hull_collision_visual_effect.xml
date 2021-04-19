@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_collision_visual_effect</id>
+		<enabled>1</enabled>
+	</header>
+	<data>
+	
+		<ray>
+			<gfx>				
+				<duration>3</duration>
+				<duration_prepare>3</duration_prepare>
+				<duration_complete>3</duration_complete>
+				<width>1.1</width>
+				<particle_hit_body>
+					<color>1;1;1;1</color>
+					<density>1</density>
+				</particle_hit_body>
+			</gfx>
+			<sfx>
+			</sfx>
+		</ray>
+		
+	</data>
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>SCdestroyedHereticParts01-0</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/destroyed_hulls/heretic/SCdestroyedHereticParts01-0.obj</model>
+		<textures>
+			<diffuse>space_objects/destroyed_hulls/heretic/SCdestroyedHereticParts01-0.png</diffuse>
+			<specular>space_objects/destroyed_hulls/heretic/SCdestroyedHereticParts01-0.png</specular>
+			<normal>space_objects/destroyed_hulls/heretic/SCdestroyedHereticParts01-0.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+	<data>
+		
+			<scale_range>1.0;1.0</scale_range>
+		
+			<rotation_range>-1.0;1.0</rotation_range>
+		
+			<physics>
+				<mass>6.5</mass>
+				<shapes>
+					<shape>
+    <type>polygon</type>
+    <offset>0.000;0.000</offset>
+    <angle>0</angle>
+    <points>-0.550;-0.300 -0.550;0.125 -0.050;0.250 0.625;0.120 0.950;-0.050 0.500;-0.300</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-0.3;-0.45</offset>
+    <angle>0</angle>
+    <size>0.15;0.3</size>
+    <mass>8</mass>
+  </shape>
+				</shapes>
+			</physics>
+	</data>
+</root>

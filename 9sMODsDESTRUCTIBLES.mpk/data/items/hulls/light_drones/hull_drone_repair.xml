@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_drone_repair</id>
+		<title>hull_drone_repair</title>
+		<description> Drone V1</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/drone/droneHullV1.png</icon>
+	</gfx>
+
+	<data>
+		<!--scale_range>0.75;1.25</scale_range-->
+		<!--rotation_range>-1.0;1.0</rotation_range-->
+
+		<!--movable>1</movable-->
+		<!--persistent>1</persistent-->
+		<instanced>1</instanced>
+		<show_on_map>1</show_on_map>	
+
+		<type>1</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter>0</faction_filter>
+			<faction_only>0</faction_only>
+			<faction_reputation>0</faction_reputation>
+			<price>0</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<effects>
+				<effect>
+					<id>piloting_light_frigates_ability</id>
+					<value>1</value>
+				</effect>
+			</effects>
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>collision_damage_self_special</effect_type>
+				<effect_base>-1000</effect_base>
+				<effect_per_level>-0.15</effect_per_level>
+				<effect_cap>-1000</effect_cap>
+			</effect>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>1000</effect_base>
+			</effect>
+
+
+
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>1</effect_base>
+			</effect>
+
+
+			<effect>
+				<effect_type>speed_max_percent</effect_type>
+				<effect_base>3</effect_base>
+			</effect>
+
+
+			<effect>
+				<effect_type>speed_max_value</effect_type>
+				<effect_base>1000</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+
+			<gfx>
+				<world_model>hulls/hull_drone_repair.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_drone_repair/REPAIR_LOW.png</diffuse>
+					<specular>hulls/hull_drone_repair/REPAIR_LOW.png</specular>
+					<normal>hulls/hull_drone_repair/REPAIR_LOW.png</normal>
+				</world_textures>
+				<inventory_model>hulls/droneHullV1.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_drone_repair/REPAIR_LOW.png</diffuse>
+					<specular>hulls/hull_drone_repair/REPAIR_LOW.png</specular>
+					<normal>hulls/hull_drone_repair/REPAIR_LOW.png</normal>
+				</inventory_textures>
+				<world_scale>0.35</world_scale>
+				<inventory_scale>0.35</inventory_scale>
+			</gfx>
+			
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>
+				<!--on_engine_silent>engine/engine_silent.ogg</on_engine_silent-->
+				<!--on_engine_engaged>engine/engine_engaged.ogg</on_engine_engaged-->
+			</sfx>
+			
+			<physics>
+				<mass>300</mass>
+<shapes>
+<shape>
+    <type>box</type>
+    <offset>-0.020;0.000</offset>
+    <angle>0</angle>
+    <size>0.25;0.55</size>
+    <mass>1</mass>
+  </shape>
+</shapes>
+
+			</physics>
+
+			<equipment_slots>
+				<consumables>0</consumables>
+				<devices>0</devices>
+				<boosters>0</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>1</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>120</rotation_angle>
+					<rotation_speed>180</rotation_speed>
+					<position>0;0;0</position>
+				</weapon_slot>
+				<weapon_slot>
+					<id>1</id>
+					<slot_type>1</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>120</rotation_angle>
+					<rotation_speed>180</rotation_speed>
+					<position>0;0;0</position>
+				</weapon_slot>
+				
+			</weapon_slots>
+
+						<trails>
+				<default_color>0;0.6;1</default_color>
+				
+				<!-- main engines -->
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.101;0.126;0.0075</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>2</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.101;-0.126;0.0075</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>2</engine_mode>
+				</trail>
+				
+				<!-- reverse -->
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.12;0.030;0.105</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>1</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.12;-0.030;0.105</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<!-- engine modes: 1=backward, 2=forward, 3=rotate left, 4=rotate right, 5=strafe left, 6=strafe right -->
+					<engine_mode>1</engine_mode>
+				</trail>
+				
+				<!-- rcs left front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.12;0.082;0.010</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>4,6</engine_mode>
+				</trail>
+				<!-- rcs right front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.12;-0.082;0.010</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>3,5</engine_mode>
+				</trail>
+				<!-- rcs left back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.12;0.216;0.059</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>3,6</engine_mode>
+				</trail>
+				<!-- rcs right back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.12;-0.216;0.059</position_offset>
+					<position_rotation>0;0;270</position_rotation>
+					<engine_mode>4,5</engine_mode>
+				</trail>
+				
+			</trails>
+		</item_data>
+	</data>
+</root>

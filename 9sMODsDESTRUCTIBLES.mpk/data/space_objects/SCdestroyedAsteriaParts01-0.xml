@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<header>
+		<id>SCdestroyedAsteriaParts01-0</id>
+		<title>props</title>
+		<description>props</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<model>space_objects/destroyed_hulls/asteria/SCdestroyedAsteriaParts01-0.obj</model>
+		<textures>
+			<diffuse>space_objects/destroyed_hulls/asteria/SCdestroyedAsteriaParts01-0.png</diffuse>
+			<specular>space_objects/destroyed_hulls/asteria/SCdestroyedAsteriaParts01-0.png</specular>
+			<normal>space_objects/destroyed_hulls/asteria/SCdestroyedAsteriaParts01-0.png</normal>
+		</textures>
+		<scale>1</scale>
+		<rotation>0</rotation>
+	</gfx>
+	<data>
+		
+			<scale_range>1.0;1.0</scale_range>
+		
+			<rotation_range>-1.0;1.0</rotation_range>
+		
+			<physics>
+				<mass>6.5</mass>
+				<shapes>
+					<shape>
+    <type>polygon</type>
+    <offset>0;0</offset>
+    <angle>0</angle>
+    <points>-0.45;-0.36 -0.46;-0.1 0.315;-0.1 0.325;-0.31 0.28;-0.36</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>0;0</offset>
+    <angle>0</angle>
+    <points>-0.515;0.33 -0.515;0.185 -0.46;-0.0999 0.315;-0.0999 0.325;0.31 0.28;0.36</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.439;-0.015</offset>
+    <angle>0</angle>
+    <size>0.2;0.425</size>
+    <mass>8</mass>
+  </shape>
+				</shapes>
+			</physics>
+	</data>
+</root>

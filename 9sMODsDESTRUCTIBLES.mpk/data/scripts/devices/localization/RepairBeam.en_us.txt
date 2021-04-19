@@ -1,0 +1,8 @@
+﻿$n0015:       Repair is not required
+$n0016:       Structure is at maximum level.
+$n0017:       Repair failed
+$n0018:       Not enough energy.
+$n0019:       Healing beam discharged
+$n0020:       Energry depleted.
+$n0013:       
+$n0014:       

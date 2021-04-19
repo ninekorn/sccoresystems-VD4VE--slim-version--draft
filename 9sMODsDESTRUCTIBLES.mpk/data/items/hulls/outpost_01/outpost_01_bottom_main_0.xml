@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>outpost_01_bottom_main_0</id>
+		<title>outpost_01_bottom_main_0</title>
+		<description>You shouldn't have seen this, you know.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon></icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- none -->
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>2500</effect_base>
+			</effect>
+			<effect>
+				<effect_type>armor_value</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_self_special</effect_type>
+				<effect_base>-0.5</effect_base>
+			</effect>
+			<effect>
+				<effect_type>collision_damage_target_special</effect_type>
+				<effect_base>0.25</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+			<gfx>
+				<world_model>hulls/hull_outpost_01_bottom_main.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_outpost_01_bottom_main/dif_256.png</diffuse>
+					<specular>hulls/hull_outpost_01_bottom_main/spec_256.png</specular>
+					<normal>hulls/hull_outpost_01_bottom_main/nrm_256.png</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_outpost_01_bottom_main.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_outpost_01_bottom_main/dif_256.png</diffuse>
+					<specular>hulls/hull_outpost_01_bottom_main/spec_256.png</specular>
+					<normal>hulls/hull_outpost_01_bottom_main/nrm_256.png</normal>
+				</inventory_textures>
+				<world_scale>1</world_scale>
+				<inventory_scale>1</inventory_scale>
+			</gfx>
+			
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>				
+			</sfx>
+			
+			<physics>
+				<mass>9001</mass>
+				<shapes>
+<shape>
+    <type>box</type>
+    <offset>-9.000;0.9</offset>
+    <angle>-45</angle>
+    <size>1.600;2.150</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-8.600;-1</offset>
+    <angle>-65.00001</angle>
+    <size>3.000;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>8.600;-1.000</offset>
+    <angle>65</angle>
+    <size>3.000;1.000</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>8.275;2.085</offset>
+    <angle>180</angle>
+    <points>-0.160;-0.510 -0.480;-0.210 -0.550;0.000 0.640;1.000 0.640;0.200 0.000;-0.425</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>polygon</type>
+    <offset>-8.275;2.085</offset>
+    <angle>-90</angle>
+    <points>-0.160;-0.510 -0.480;-0.210 -0.450;-0.050 0.250;0.625 1.000;0.625 0.000;-0.425</points>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-9.325;-0.6</offset>
+    <angle>-80</angle>
+    <size>3.000;1.500</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>-7.100;-3.3</offset>
+    <angle>-41</angle>
+    <size>5.650;1.850</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>0.000;-4.750</offset>
+    <angle>0</angle>
+    <size>11.150;2.200</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>9.325;-0.6</offset>
+    <angle>80</angle>
+    <size>3.000;1.500</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>7.100;-3.3</offset>
+    <angle>-319</angle>
+    <size>5.650;1.850</size>
+    <mass>8</mass>
+  </shape>
+  <shape>
+    <type>box</type>
+    <offset>9.000;0.9</offset>
+    <angle>-315</angle>
+    <size>1.600;2.150</size>
+    <mass>8</mass>
+  </shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>0</consumables>
+				<devices>0</devices>
+				<boosters>0</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>1</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>0</display_type>
+					<direction>0</direction>
+					<rotation_angle>0</rotation_angle>
+					<rotation_speed>0</rotation_speed>
+					<position>0.000;0.000;0</position>
+				</weapon_slot>
+			</weapon_slots>
+
+			<trails>
+				<!-- none -->
+			</trails>
+			
+			<blinks>
+				<!-- none -->
+			</blinks>			
+		</item_data>
+	</data>
+</root>

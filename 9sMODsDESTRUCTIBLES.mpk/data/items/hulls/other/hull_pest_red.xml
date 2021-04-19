@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_pest_red</id>
+		<title>Red pest</title>
+		<description>Kill it with fire! Now!</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/hulls/hull_pest_red.png</icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>0</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<!-- possibly add alien tech skill -->
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>2500</effect_base>
+			</effect>
+			<effect>
+				<effect_type>armor_value</effect_type>
+				<effect_base>5</effect_base>
+			</effect>
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>100</effect_base>
+			</effect>
+			<effect>
+				<effect_type>maneuvering_percent</effect_type>
+				<effect_base>50</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+			<gfx>
+				<world_model>hulls/hull_pest_red.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_pest_red/dif_256.jpg</diffuse>
+					<specular>hulls/hull_pest_red/spec_256.jpg</specular>
+					<normal>hulls/hull_pest_red/nrm_256.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_pest_red.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_pest_red/dif_1024.jpg</diffuse>
+					<specular>hulls/hull_pest_red/spec_1024.jpg</specular>
+					<normal>hulls/hull_pest_red/nrm_1024.jpg</normal>
+				</inventory_textures>
+				<world_scale>1.6</world_scale>
+				<inventory_scale>1.6</inventory_scale>
+			</gfx>
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_alien_01.ogg</sound>
+					<sound>explosions/on_explode_alien_02.ogg</sound>
+					<sound>explosions/on_explode_alien_03.ogg</sound>
+				</on_explode>
+				<on_engine_silent>engine/engine_silent.ogg</on_engine_silent>
+				<on_engine_engaged>engine/engine_engaged.ogg</on_engine_engaged>
+			</sfx>
+			
+			<physics>
+				<mass>1000</mass>
+				<shapes>
+					<shape>
+						<type>circle</type>
+						<offset>0.068;0.0</offset>
+						<radius>0.147</radius>
+						<mass>1</mass>
+					</shape>
+					<shape>
+						<type>box</type>
+						<offset>-0.187;0.0</offset>
+						<size>0.431;0.274</size>
+						<mass>4</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>1</consumables>
+				<devices>1</devices>
+				<boosters>4</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>3</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>30</rotation_angle>
+					<rotation_speed>360</rotation_speed>
+					<position>-0.050;0.000;-0.236</position>
+				</weapon_slot>
+				<weapon_slot>
+					<id>1</id>
+					<slot_type>3</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>30</rotation_angle>
+					<rotation_speed>360</rotation_speed>
+					<position>-0.050;0.000;-0.236</position>
+				</weapon_slot>
+				<weapon_slot>
+					<id>2</id>
+					<slot_type>3</slot_type>
+					<slot_size>3</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>30</rotation_angle>
+					<rotation_speed>360</rotation_speed>
+					<position>-0.050;0.000;-0.236</position>
+				</weapon_slot>
+			</weapon_slots>
+
+			<trails>
+				<default_color>0.25;0.8;0</default_color>
+
+				<!-- back: center -->
+				<trail>
+					<id>trail_engine_alien_big</id>
+					<position_offset>-0.45;0.00;0.00</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+			</trails>
+			
+			<blinks>
+				<!-- none -->
+			</blinks>
+		
+		</item_data>
+	</data>
+</root>

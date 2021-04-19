@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>special_no_ship</id>
+		<title>(Unused)</title>
+		<description>(Unused)</description>
+		<enabled>1</enabled>
+	</header>
+
+	<data>
+
+		<hull>no_ship</hull>
+
+		<consumables>
+			<!-- none -->
+		</consumables>
+
+		<devices>
+			<!-- none -->
+		</devices>
+
+		<weapons>
+			<weapon>
+				<slot>0</slot>
+				<weapon>weapon_laser_light</weapon>
+			</weapon>
+		</weapons>
+
+		<drop_crate>crate_01</drop_crate>
+
+		<drop_list>
+			<drop>droplist_generic_ships_01</drop>
+		</drop_list>
+		
+		<effects>
+			<!-- none -->
+		</effects>
+
+	</data>
+</root>

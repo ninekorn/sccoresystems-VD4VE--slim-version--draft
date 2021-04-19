@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>engineer</id>
+		<title>Engineer</title>
+		<description>Engineering missions, combat support, and high-tech equipment. These are the things that the engineer class specializes in.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<data>
+
+		<!-- starting money -->
+		<money>100000</money>
+
+		<ship>
+			<equipment>
+				<!-- basic items -->
+				<hull>hull_shuttle</hull>
+				<engine>engine_civilian</engine>
+				<rcs>rcs_civilian</rcs>
+				<fueltank>fueltank_civilian</fueltank>
+				<generator>generator_civilian</generator>
+				<shield>shield_civilian</shield>
+				<radar>radar_civilian</radar>
+				<grappler>grappler_civilian</grappler>
+
+				<boosters>
+					<!-- none -->
+				</boosters>
+
+				<consumables>
+					<!-- none -->
+				</consumables>
+
+				<devices>
+					<id>OnBoard_Computer</id>
+
+				</devices>
+
+				<weapons>
+					<weapon>
+						<slot>0</slot>
+						<weapon>weapon_invisible_4_coms_0</weapon>
+					</weapon>
+					<weapon>
+						<slot>1</slot>
+						<weapon>weapon_invisible_4_coms_1</weapon>
+					</weapon>
+					<weapon>
+						<slot>2</slot>
+						<weapon>weapon_laser_civilian</weapon>
+					</weapon>
+
+				</weapons>
+			</equipment>
+			
+			<items>
+
+<item>
+					<id>drone_mining</id>
+				</item>
+<item>
+					<id>drone_mining</id>
+				</item>
+<item>
+					<id>drone_mining</id>
+				</item>
+
+<item>
+					<id>drone_repair</id>
+				</item>
+<item>
+					<id>drone_repair</id>
+				</item>
+<item>
+					<id>drone_repair</id>
+				</item>
+
+
+
+				<item>
+					<id>drone_combat_ballistic_cc_machinegun</id>
+				</item>
+				<item>
+					<id>drone_combat_energy_cc_machinegun</id>
+				</item>
+
+				<item>
+					<id>drone_combat_ballistic_cc_autocannon</id>
+				</item>
+
+<item>
+					<id>drone_combat_ballistic_cc_burstcannon</id>
+				</item>
+
+<item>
+					<id>drone_combat_ballistic_cc_cannon</id>
+				</item>
+
+
+
+<item>
+					<id>drone_combat_ballistic_cc_spray_cannon</id>
+				</item>
+
+
+
+<item>
+					<id>drone_combat_ballistic_rc_autocannon</id>
+				</item>
+
+
+
+
+
+
+
+<!--item>
+					<id>drone_combat_ballistic_rc_cannon</id>
+				</item-->
+
+
+
+
+
+
+
+<item>
+					<id>drone_combat_ballistic_rc_gauss_cannon</id>
+				</item>
+
+
+
+
+
+<item>
+					<id>drone_combat_energy_cc_autocannon</id>
+				</item>
+
+
+
+
+
+
+<item>
+					<id>drone_combat_energy_cc_beam_laser</id>
+				</item>
+
+
+
+
+<item>
+					<id>drone_combat_energy_cc_burstcannon</id>
+				</item>
+
+
+<!--item>
+					<id>drone_combat_energy_cc_cannon</id>
+				</item-->
+
+<item>
+					<id>drone_combat_energy_cc_pulse_laser</id>
+				</item>
+
+<item>
+					<id>drone_combat_energy_rc_autocannon</id>
+				</item>
+
+<item>
+					<id>drone_combat_energy_rc_cannon</id>
+				</item>
+
+<item>
+					<id>drone_combat_energy_rc_particle_discharge</id>
+				</item>
+
+<item>
+					<id>drone_combat_energy_rc_particle_discharge</id>
+				</item>
+<item>
+					<id>drone_combat_energy_rc_particle_discharge</id>
+				</item>
+<item>
+					<id>drone_combat_energy_rc_particle_discharge</id>
+				</item>
+<item>
+					<id>drone_combat_energy_rc_particle_discharge</id>
+				</item>
+<item>
+					<id>drone_combat_missile_rc_guided</id>
+				</item>
+
+<item>
+					<id>drone_combat_missile_rc_unguided</id>
+				</item>
+
+
+
+
+
+
+
+
+			</items>
+			
+			<cargo>
+				<!-- none -->
+			</cargo>
+		</ship>
+
+		<skill_points>0</skill_points>
+		<skills>
+			<skill>
+				<skill_id>light_frigates</skill_id>
+				<level>1</level>
+			</skill>
+			<skill>
+				<skill_id>light_direct_weapons</skill_id>
+				<level>1</level>
+			</skill>
+			
+			<skill>
+				<skill_id>engineering</skill_id>
+				<level>5</level>
+			</skill>
+			<skill>
+				<skill_id>primary_consumables</skill_id>
+				<level>2</level>
+			</skill>
+			<skill>
+				<skill_id>shield_management</skill_id>
+				<level>2</level>
+			</skill>
+		</skills>
+
+	</data>
+</root>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>engine_civilian</id>
+		<title>Civilian engine</title>
+		<description>As with all civilian tech, this engine is much worse than its more advanced counterparts.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/engines/engine_civilian.png</icon>
+	</gfx>
+
+	<data>
+		<type>2</type>
+		
+		<shops>
+			<shops_level>1</shops_level>
+			<faction_filter></faction_filter>
+			<price>0</price>
+		</shops>
+		
+		<flags>
+			<flag>civilian</flag>
+		</flags>
+
+		<upgrades_max>10</upgrades_max>
+		<upgrades>
+			<upgrade>
+				
+				<effects>
+					<effect>
+						<effect_type>cargo_capacity_value</effect_type>
+						<effect_base>10</effect_base>
+					</effect>
+				</effects>
+			</upgrade>
+			
+		</upgrades>
+
+		<requirements>
+			<!-- none -->
+		</requirements>
+
+		<effects>
+			
+			<effect>
+				<effect_type>speed_max_value</effect_type>
+				<effect_base>450</effect_base>
+			</effect>
+			<effect>
+				<effect_type>acceleration_value</effect_type>
+				<effect_base>100</effect_base>
+			</effect>
+			<effect>
+				<effect_type>maneuvering_value</effect_type>
+				<effect_base>200</effect_base>
+			</effect>
+			<effect>
+				<effect_type>energy_consumption_engine_value</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+			<durability>25000</durability>
+			<trail_color>1;0.75;0</trail_color>				
+		</item_data>
+		<variables>
+			<var>
+				<id>upgradeTheItem</id>
+			</var>	
+		</variables>	
+	</data>
+</root>

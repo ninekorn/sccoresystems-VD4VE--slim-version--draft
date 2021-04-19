@@ -1,0 +1,2 @@
+﻿header.title:             Коричневый паразит
+header.description:       Выжги его огнём! Не медли!

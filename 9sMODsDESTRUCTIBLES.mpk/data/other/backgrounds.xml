@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>backgrounds</id>
+	</header>
+
+	<data>
+		<stars>
+			<texture>backgrounds/stars/transparent.jpg</texture>
+		</stars>
+	
+		<nebulas_generic>
+			<nebula>
+				<texture>backgrounds/stars/transparent.jpg</texture>
+			</nebula>
+		</nebulas_generic>
+	
+		<nebulas_special>
+			<nebula>		
+				<texture>backgrounds/stars/transparent.jpg</texture>
+				<colors>red</colors>
+			</nebula>
+		</nebulas_special>		
+	</data>
+</root>

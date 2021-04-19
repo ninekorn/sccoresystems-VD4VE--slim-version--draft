@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>xml_drone_combat_energy_cc_beam_laser</id>
+		<title>(Unused)</title>
+		<description>(Unused)</description>
+		<enabled>1</enabled>
+	</header>
+
+	<data>
+
+		<spawning>
+			<tags>drone</tags>
+			<level_from>0</level_from>
+			<level_to>15</level_to>
+			<max_in_group>1</max_in_group>
+			<chance>100</chance>
+		</spawning>
+	
+		<hull>hull_drone_combat</hull>
+
+		<consumables>
+		</consumables>
+
+		<devices>
+			<!-- none -->
+		</devices>
+		
+		<drop_crate>crate_01</drop_crate>
+
+		<drop_list>
+			<drop>droplist_empty</drop>
+		</drop_list>
+
+		<weapons>
+			<weapon>
+				<slot>0</slot>
+				<!--weapon>weapon_invisible</weapon-->
+				<weapon>weapon_drone_combat_energy_cc_beam_laser</weapon>
+			</weapon>	
+		</weapons>
+
+				<effects>
+					<effect>
+				<effect_type>speed_max_value</effect_type>
+				<effect_base>500</effect_base>
+			</effect>
+			<effect>
+				<effect_type>speed_max_percent</effect_type>
+				<effect_base>0</effect_base>
+			</effect>
+
+
+			<effect>
+				<effect_type>maneuvering_percent</effect_type>
+				<effect_base>50</effect_base>
+			</effect>
+
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>1</effect_base>
+			</effect>
+
+		</effects>
+		
+	</data>
+</root>

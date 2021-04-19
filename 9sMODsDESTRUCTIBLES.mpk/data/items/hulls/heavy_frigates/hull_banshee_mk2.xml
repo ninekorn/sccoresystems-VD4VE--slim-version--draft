@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<header>
+		<id>hull_banshee_mk2</id>
+		<title>Banshee Mk2</title>
+		<description>Further development of the popular Banshee hull. Posesses improved characteristics making them one of the best options among light frigates.</description>
+		<enabled>1</enabled>
+	</header>
+
+	<gfx>
+		<icon>items/hulls/hull_banshee_mk2.png</icon>
+	</gfx>
+
+	<data>
+		<type>1</type>
+		
+		<shops>
+			<shops_level>10</shops_level>
+			<faction_filter></faction_filter>
+			<price>4700</price>
+		</shops>
+
+		<upgrades_max>0</upgrades_max>
+		<upgrades>
+			<!-- none -->
+		</upgrades>
+
+		<requirements>
+			<effects>
+				<effect>
+					<id>piloting_heavy_frigates_ability</id>
+					<value>1</value>
+				</effect>
+			</effects>
+		</requirements>
+
+		<effects>
+			<effect>
+				<effect_type>structure_value</effect_type>
+				<effect_base>1500</effect_base>
+			</effect>
+			<effect>
+				<effect_type>armor_value</effect_type>
+				<effect_base>8</effect_base>
+			</effect>
+			<effect>
+				<effect_type>cargo_capacity_value</effect_type>
+				<effect_base>100</effect_base>
+			</effect>
+			<effect>
+				<effect_type>radar_targeting_defense_percent</effect_type>
+				<effect_base>20</effect_base>
+			</effect>
+			<effect>
+				<effect_type>maneuvering_percent</effect_type>
+				<effect_base>5</effect_base> <!-- -10 base +15 bonus = +5 -->
+			</effect>
+			<effect>
+				<effect_type>warp_recharge_percent</effect_type>
+				<effect_base>10</effect_base>
+			</effect>
+		</effects>
+
+		<item_data>
+
+			<gfx>
+				<world_model>hulls/hull_banshee_mk2.obj</world_model>
+				<world_textures>
+					<diffuse>hulls/hull_banshee_mk2/dif_256.jpg</diffuse>
+					<specular>hulls/hull_banshee_mk2/spec_256.jpg</specular>
+					<normal>hulls/hull_banshee_mk2/nrm_256.jpg</normal>
+				</world_textures>
+				<inventory_model>hulls/hull_banshee_mk2.obj</inventory_model>
+				<inventory_textures>
+					<diffuse>hulls/hull_banshee_mk2/dif_1024.jpg</diffuse>
+					<specular>hulls/hull_banshee_mk2/spec_1024.jpg</specular>
+					<normal>hulls/hull_banshee_mk2/nrm_1024.jpg</normal>
+				</inventory_textures>
+				<world_scale>1</world_scale>
+				<inventory_scale>1</inventory_scale>
+			</gfx>
+			
+			<sfx>
+				<on_explode>
+					<sound>explosions/on_explode_01.ogg</sound>
+					<sound>explosions/on_explode_02.ogg</sound>
+					<sound>explosions/on_explode_03.ogg</sound>
+				</on_explode>
+				<on_engine_silent>engine/engine_silent.ogg</on_engine_silent>
+				<on_engine_engaged>engine/engine_engaged.ogg</on_engine_engaged>
+			</sfx>
+			
+			<physics>
+				<mass>1000</mass>
+				<shapes>
+					<shape>
+						<type>box</type>
+						<offset>0.027;0.000</offset>
+						<size>0.956;0.234</size>
+						<mass>8</mass>
+					</shape>
+					<shape>
+						<type>circle</type>
+						<offset>-0.046;-0.258</offset>
+						<radius>0.365</radius>
+						<mass>8</mass>
+					</shape>
+					<shape>
+						<type>circle</type>
+						<offset>-0.046;0.258</offset>
+						<radius>0.365</radius>
+						<mass>8</mass>
+					</shape>
+				</shapes>
+			</physics>
+
+			<equipment_slots>
+				<consumables>1</consumables>
+				<devices>1</devices>
+				<boosters>2</boosters>
+			</equipment_slots>
+			
+			<weapon_slots>
+				<!-- energy (left) -->
+				<weapon_slot>
+					<id>0</id>
+					<slot_type>1</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>1</display_type>
+					<direction>-40</direction>
+					<rotation_angle>120</rotation_angle>
+					<rotation_speed>200</rotation_speed>
+					<position>0.020;0.416;-0.123</position>
+				</weapon_slot>
+				
+				<!-- ballistic / energy (center) -->
+				<weapon_slot>
+					<id>1</id>
+					<slot_type>1;2</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>1</display_type>
+					<direction>0</direction>
+					<rotation_angle>100</rotation_angle>
+					<rotation_speed>100</rotation_speed>
+					<position>-0.139;0.000;-0.187</position>
+				</weapon_slot>
+				
+				<!-- energy (right) -->
+				<weapon_slot>
+					<id>2</id>
+					<slot_type>1</slot_type>
+					<slot_size>1</slot_size>
+					<display_type>1</display_type>
+					<direction>40</direction>
+					<rotation_angle>120</rotation_angle>
+					<rotation_speed>200</rotation_speed>
+					<position>0.020;-0.416;-0.123</position>
+				</weapon_slot>
+				
+			</weapon_slots>
+			
+			
+			<blinks>
+				<!-- antennas left -->
+				<blink>
+					<position_offset>0.461;0.214;-0.019</position_offset>
+					<size>1</size>
+					<delay>0</delay>
+					<duration>0.4</duration>
+					<interval>1.5</interval>
+					<color>0;0.4;1;1</color>
+					<light_position_offset>0.03;0.0;0.0</light_position_offset>
+					<light_range>1</light_range>
+					<light_intensity>0.5</light_intensity>
+					<light_color>0.25;0.75;1;1</light_color>
+				</blink>
+				<!-- antennas right -->
+				<blink>
+					<position_offset>0.461;-0.214;-0.019</position_offset>
+					<size>1</size>
+					<delay>0</delay>
+					<duration>0.4</duration>
+					<interval>1.5</interval>
+					<color>0;0.4;1;1</color>
+					<light_position_offset>0.03;0.0;0.0</light_position_offset>
+					<light_range>1</light_range>
+					<light_intensity>0.5</light_intensity>
+					<light_color>0.25;0.75;1;1</light_color>
+				</blink>
+			</blinks>
+			
+
+			<trails>
+				<default_color>0;0.6;1</default_color>
+				
+				<!-- main engines -->
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.438;0.464;0.00</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.438;0.364;0.00</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				
+				<trail>
+					<id>trail_engine_medium</id>
+					<position_offset>-0.493;0.00;0.015</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.438;-0.364;0.00</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_small</id>
+					<position_offset>-0.438;-0.464;0.00</position_offset>
+					<position_rotation>0;0;180</position_rotation>
+					<engine_mode>2</engine_mode>
+				</trail>
+				
+
+				
+				<!-- reverse -->
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.486;0.324;-0.003</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.486;-0.324;-0.003</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				<trail>
+					<id>trail_engine_reverse_small</id>
+					<position_offset>0.765;0.000;0.057</position_offset>
+					<position_rotation>0;0;0</position_rotation>
+					<engine_mode>1</engine_mode>
+				</trail>
+				
+				<!-- rcs left front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.061;0.646;-0.003</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>4,6</engine_mode>
+				</trail>
+				<!-- rcs left back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.267;0.646;-0.003</position_offset>
+					<position_rotation>0;0;90</position_rotation>
+					<engine_mode>3,6</engine_mode>
+				</trail>
+				<!-- rcs right front -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>0.061;-0.646;-0.003</position_offset>
+					<position_rotation>0;0;-90</position_rotation>
+					<engine_mode>3,5</engine_mode>
+				</trail>
+				<!-- rcs right back -->
+				<trail>
+					<id>trail_rcs_medium</id>
+					<position_offset>-0.267;-0.646;-0.003</position_offset>
+					<position_rotation>0;0;-90</position_rotation>
+					<engine_mode>4,5</engine_mode>
+				</trail>
+				
+			</trails>
+		</item_data>
+	</data>
+</root>

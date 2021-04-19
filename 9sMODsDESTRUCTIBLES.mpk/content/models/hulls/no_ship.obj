@@ -1,0 +1,11 @@
+# Blender v2.79 (sub 0) OBJ File: ''
+# www.blender.org
+mtllib invertedFaceForInvisibleObjectTransparencyIssuesTest.mtl
+o Cube
+v 0.000000 1.414214 1.000000
+v 1.414214 -0.000000 1.000000
+v -1.414213 -0.000000 1.000001
+vn 0.0000 0.0000 1.0000
+usemtl Material
+s off
+f 2//1 1//1 3//1
