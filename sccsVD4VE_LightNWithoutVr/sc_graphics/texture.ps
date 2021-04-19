@@ -1,0 +1,278 @@
+Texture2D shaderTexture;
+SamplerState SampleType;
+
+SamplerState textureSampler
+{
+    Filter = MIN_MAG_MIP_LINEAR;
+    AddressU = Wrap;
+    AddressV = Wrap;
+};
+
+cbuffer LightBuffer
+{
+	float4 ambientColor;
+	float4 diffuseColor;
+	float3 lightDirection;
+	float padding0;
+	float3 lightPosition;
+	float padding1;
+};
+
+struct PixelInputType
+{ 
+	float4 position : POSITION;
+    float2 tex : TEXCOORD0;
+	float4 color : COLOR;
+	float3 normal : NORMAL;
+	float4 instancePosition : POSITION1;
+	float4 instanceRadRot : POSITION2;
+	float4 instanceRadRotRIGHT : POSITION3;
+	float4 instanceRadRotUP : POSITION4;
+};
+
+//float _lastDOTProdAngleWithHypAndOpp = -1;
+static const float PI = 3.1415926535897932384626433832795f;
+static const float3 world_forward = float3(0,0,1);
+static const float3 world_backward = float3(0,0,-1);
+static const float3 world_right = float3(1,0,0);
+static const float3 world_left = float3(-1,0,0);
+static const float3 world_up = float3(0,1,0);
+static const float3 world_down = float3(0,-1,0);
+
+
+static float dstX= 0;
+static float dstY= 0;
+static float dstZ = 0;
+static float dstX_vs_dstZ = 0;
+static float dstX_vs_dstY = 0;
+static float dstY_vs_dstZ = 0;
+
+float sc_check_distance_node_3d_geometry(float3 nodeA, float3 nodeB, float minx, float miny, float minz, float maxx, float maxy, float maxz) 
+{
+	//STEVE CHASSÉ 3D blueprint for sphere type and a ton more. based on 2d version of Sebastian Lague. but my version is not perfect. i don't know yet what else to put in there.
+	//the solution was easier than i thought and it came to me quite fast after fearing for months i'd never be able to quickly get this function written. This function is also a
+	//main part of the upgrade that i want to implement to the Jitter physics engine for spatial awareness. In the jitter physics engine, it seems as if every frame that the objects
+	//are enabled and non-static, jitter checks ALL bounding boxes for collisions between all of them. So of course at some point, the more objects in the scene, the more bounding
+	//boxes it has to check for each individual objects. for instance, lets say there is 1000 objects in the scene, so index 0 to index 999, if object 0 checks against ALL other
+	//998 objects, it's a huge waste of performance. But there are collision "islands" in the jitter physics engine but those i believe are chosen only when bounding boxes are 
+	//officially declared as colliding. so i want to see if i can use a fast distance checker (which i didnt test yet against Math.Sqrt or the very fast quake sqrt). But all of
+	//the things i learned in doing chunks are also going to be needed for when im going to start dicking around again in the Jitter Physics Engine. So prior upgrading the physics
+	//engine jitter, i can only have 4000 max objects and it would lag the scene. but the tests are not carved on rock yet because, 1. im not loading the dll how i should maybe
+	//be doing so because multiple instances of the physics engine doesn
+
+
+	dstX = abs((nodeA.x) - (nodeB.x));
+	dstY = abs((nodeA.y) - (nodeB.y));
+	dstZ = abs((nodeA.z) - (nodeB.z));
+
+	dstX_vs_dstZ = 0;
+	dstX_vs_dstY = 0;
+	dstY_vs_dstZ = 0;
+
+	if (dstX > dstZ)
+	{
+		dstX_vs_dstZ = maxx * dstZ + minx * (dstX - dstZ);
+	}
+	else
+	{
+		dstX_vs_dstZ = maxx * dstX + minx * (dstZ - dstX);
+	}
+
+	if (dstX > dstY)
+	{
+		dstX_vs_dstY = maxy * dstY + miny * (dstX - dstY);
+	}
+	else
+	{
+		dstX_vs_dstY = maxy * dstX + miny * (dstY - dstX);
+	}
+
+	if (dstY > dstZ)
+	{
+		dstY_vs_dstZ = maxz * dstZ + minz * (dstY - dstZ);
+	}
+	else
+	{
+		dstY_vs_dstZ = maxz * dstY + minz * (dstZ - dstY);
+	}
+	return dstX_vs_dstY + dstX_vs_dstZ + dstY_vs_dstZ;
+}
+
+float4 the_color = float4(0.65,0.65,0.65,1);
+
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	if(input.color.x == 0.0 && input.color.y == 0.0  && input.color.z == 0.0  && input.color.w == 0.0)
+	{
+		input.color = the_color;
+
+		float x = dot(input.normal, float3(1, 0.25, 0.4));	
+		x = x * 0.5 - 0.5;
+		//input.color = input.color;
+		float3 color = lerp(float3(input.color.x*0.75, input.color.y*0.75, input.color.z*0.75), float3(input.color.x*0.85, input.color.y*0.85, input.color.z*0.85), x);
+		input.color.xyz = color;
+		input.color.w = 1.0;
+		//input.Pos = input[i].Pos;
+		//input.tex = input[i].tex;
+	
+
+		float4 textureColor;
+		// Sample the pixel color from the texture using the sampler at this texture coordinate location.
+		textureColor = shaderTexture.Sample(SampleType, input.tex);
+		return textureColor;
+	}
+	else
+	{	
+		//input.color = the_color;
+		//input.color = float4(0.15f,0.35f,0.95f,1); light blue turquoise
+		//input.color = float4(0.55,0.25,0.25,1); //red blood
+		//input.color = float4(0.15,0.15,0.15,1); //grey
+		//float x = dot(input.normal, float3(1, 0.25, 0.4));	
+
+		float x = dot(input.normal, float3(1, 0.45, 0.65));	
+		x = x * 0.5 - 0.5;
+		//input.color = input.color;
+		//float3 color = lerp(float3(input.color.x*0.85, input.color.y*0.85, input.color.z*0.85), float3(input.color.x*0.95, input.color.y*0.95, input.color.z*0.95), x);
+		float3 color = lerp(float3(input.color.x*0.85, input.color.y*0.85, input.color.z*0.85), float3(input.color.x*1.5, input.color.y*1.5, input.color.z*1.5), x);
+
+		input.color.xyz = color;
+		input.color.w = 1.0;
+		//input.Pos = input[i].Pos;
+		//input.tex = input[i].tex;
+	
+		float3 lightDir;
+		float lightIntensity;
+		float4 colorer;
+
+		colorer = ambientColor;
+
+		lightDir = -lightDirection;
+
+		float3 inputPos = input.instancePosition.xyz;
+		//float distTot = sqrt(((lightPosition.x - inputPos.x)*(lightPosition.x - inputPos.x)) + ((lightPosition.y - inputPos.y)*(lightPosition.y - inputPos.y)) + ((lightPosition.z - inputPos.z)*(lightPosition.z - inputPos.z)));
+		float distTot = sc_check_distance_node_3d_geometry(lightPosition, inputPos, 2, 2, 2, 2, 2, 2);
+
+		float3 dirLightToFace = lightPosition - inputPos;
+		dirLightToFace /= distTot;
+
+		float someOtherDot = dot(dirLightToFace, lightDir);
+
+		//float DOTProdAngleWithHypAndOpp = saturate(dot(input.normal, lightDir));
+
+		float DOTProdAngleWithHypAndOpp = saturate(dot(input.normal, dirLightToFace));
+
+		someOtherDot =  (DOTProdAngleWithHypAndOpp + someOtherDot) * 0.5f;
+
+		
+		
+		float someTester = padding1 - distTot;
+		float distMod = someTester;
+		distMod *= 0.1f;	 //0.01f
+		float4 modColor = colorer;
+
+		modColor += (diffuseColor * (someOtherDot)) * distMod;
+		modColor = saturate(modColor);
+
+		input.color = input.color * modColor * 0.75f;
+		
+			
+		/*if(input.color.x > 0.65f)
+		{
+			input.color.x = 0.65f;
+		}
+		if(input.color.y > 0.65f)
+		{
+			input.color.y = 0.65f;
+		}
+		if(input.color.z > 0.65f)
+		{
+			input.color.z = 0.65f;
+		}*/
+	
+
+		/*if(input.color.x < 0.01f)
+		{
+			input.color.x = 0.01f;
+		}
+		if(input.color.y < 0.01f)
+		{
+			input.color.y = 0.01f;
+		}
+		if(input.color.z < 0.01f)
+		{
+			input.color.z = 0.01f;
+		}*/
+		
+		/*if(distTot < padding1)
+		{	
+			if (someOtherDot >= 0.5f)
+			{			
+				float someTester = padding1 - distTot;
+				float distMod = someTester;
+				distMod *= 0.01f;	
+				float4 modColor = colorer;
+
+				if(distTot < padding0)
+				{				
+					float someTester = padding1 - distTot;
+					float distMod = someTester;
+					distMod *= 0.01f;	
+					float4 modColor = colorer;
+
+					modColor += (diffuseColor * (someOtherDot)) * distMod;
+					modColor = saturate(modColor);
+					input.color = input.color * modColor*0.95f;
+				}	
+				else
+				{
+					float someTester = padding1 - (distTot);
+					float distMod = someTester;
+					distMod *= 0.01f;	
+					float4 modColor = colorer;
+
+					modColor += (diffuseColor * (someOtherDot)) * distMod;
+					modColor = saturate(modColor);
+					input.color = input.color * modColor*0.95f;
+				}			
+			}
+			else
+			{
+				if(distTot < padding0)
+				{
+					float someTester = padding1 - distTot;
+					float distMod = someTester;
+					distMod *= 0.01f;	
+					float4 modColor = colorer;
+
+					modColor += (diffuseColor * (someOtherDot)) * distMod;
+					modColor = saturate(modColor);
+
+					input.color = input.color * modColor*0.95f;
+				}	
+				else
+				{
+					float someTester = padding1 - (distTot);
+					float distMod = someTester;
+					distMod *= 0.01f;	
+					float4 modColor = colorer;
+
+					modColor += (diffuseColor * (someOtherDot)) * distMod;
+					modColor = saturate(modColor);
+
+					input.color = input.color * modColor*0.95f;
+				}
+			}
+		}*/
+		return input.color;
+	}
+}
+
+
+
+
+
+
+
+
+
+

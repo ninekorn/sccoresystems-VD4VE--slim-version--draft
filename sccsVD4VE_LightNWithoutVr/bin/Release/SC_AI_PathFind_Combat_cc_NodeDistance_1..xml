@@ -1,0 +1,42 @@
+using(console);
+
+var SC_AI_PathFind_Mining_NodeDistance_1 =
+{
+    checkNodeDistance: function (nodeA, nodeB) {
+        var dstX = Math.abs((nodeA.x) - (nodeB.x));
+        var dstZ = Math.abs((nodeA.y) - (nodeB.y));
+
+        if (dstX > dstZ)
+            return 14 * dstZ + 10 * (dstX - dstZ);
+        return 14 * dstX + 10 * (dstZ - dstX);
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

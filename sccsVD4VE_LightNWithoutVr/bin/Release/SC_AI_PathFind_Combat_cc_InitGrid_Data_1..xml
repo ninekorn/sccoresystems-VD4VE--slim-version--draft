@@ -1,0 +1,143 @@
+using(console);
+include(SC_Utilities.js);
+include(SC_Station_Tiles_Outpost_01.js);
+include(SC_AI_PathFind_Mining_NodeDistance_1.js);
+
+var stationTilesArray = [];
+var initialPathfindStartingPos = [];
+var initialPathfindTargetPos = [];
+
+var indexOfPlayer;
+var globIndex;
+var switchForStationTiles = 0;
+var stationTilesArray = [];
+
+var stationTiles;
+var lastPlayerID;
+var indexOfPlayer;
+var globIndex;
+var targetPos;
+var initialPos;
+
+var gcosty = 0;
+var hcosty = 0;
+var fcosty = 0;
+
+var nodeDiameter;
+
+var gridSizeXL;
+var gridSizeYB;
+
+var gridSizeXR;
+var gridSizeYT;
+
+var parenter;
+
+var grid = [];
+var openSet = [];
+var closedSet = [];
+
+var xx;
+var yy;
+
+var boolWalker;
+
+var roundedX;
+var roundedY;
+var rounded;
+var coords;
+var diffX;
+var diffY;
+var test;
+var indexer;
+
+var startNodegcoster ;
+var startNodehcoster;
+var startNodefcoster;
+var index;
+var lastStationTilesIndex;
+var splittedTilesOfStation;
+
+var SC_AI_PathFind_Mining_InitGrid_Data_1 =
+{
+    npcGetGridData: function (gridWorldSize, nodeRadius, indexOfGrid, cData, noder)
+    {  
+		nodeDiameter = nodeRadius * 2;
+
+        gridSizeXL = (gridWorldSize.xL * 1);
+        gridSizeYB = (gridWorldSize.yB * 1);
+
+        gridSizeXR = (gridWorldSize.xR * 1);
+        gridSizeYT = (gridWorldSize.yT * 1);
+
+        parenter = null;
+
+        if (noder != null)
+        {
+            parenter = noder.parent;
+        }
+
+        grid = [];
+        openSet = [];
+        closedSet = [];
+
+        for (var x = -gridSizeXL; x <= gridSizeXR; x++)
+        {
+            for (var y = -gridSizeYB; y <= gridSizeYT; y++)
+            {
+                //grid.push(null);
+                 xx = x;
+                 yy = y;
+
+                if (xx < 0)
+                {
+                    xx *= -1;
+                    xx = (gridSizeXR) + xx;
+                }
+                if (yy < 0)
+                {
+                    yy *= -1;
+                    yy = (gridSizeYT) + yy;
+                }
+
+                 boolWalker = 1;
+
+                 roundedX = cData.glip.x + x;
+                 roundedY = cData.glip.y + y;
+
+                var index = xx * (gridWorldSize.xL + gridWorldSize.xR + 1) + yy;
+
+                if (roundedX === cData.lip.x && roundedY === cData.lip.y)
+                {
+                    //console.PrintError("found start Node");
+                    startNodegcoster = 0;
+                    startNodehcoster = SC_AI_PathFind_Mining_NodeDistance_1.checkNodeDistance({ x: roundedX, y: roundedY }, cData.ltp);
+                    startNodefcoster = startNodegcoster + startNodehcoster;
+
+                    grid[index] = { boolWalk: boolWalker, worldPosition: cData.lsp, gcost: startNodegcoster, hcost: startNodehcoster, fcost: startNodefcoster, gridTileX: x, gridTileY: y, index: index, parent: parenter, gridIndex: indexOfGrid, gridPos: cData.glip, open: 0, closed: 0 };;
+                    openSet.push(grid[index]);
+                }
+                else if (cData.lsp.x === roundedX && cData.lsp.y === roundedY)
+                {
+                    //console.PrintError("new Grid");
+                    gcosty = SC_AI_PathFind_Mining_NodeDistance_1.checkNodeDistance(cData.lsp, { x: roundedX, y: roundedY });
+                    hcosty = SC_AI_PathFind_Mining_NodeDistance_1.checkNodeDistance({ x: roundedX, y: roundedY }, cData.ltp);
+                    fcosty = gcosty + hcosty;
+
+                    grid[index] = { boolWalk: boolWalker, worldPosition: cData.lsp, gcost: gcosty, hcost: hcosty, fcost: fcosty, gridTileX: x, gridTileY: y, index: index, parent: parenter, gridIndex: indexOfGrid, gridPos: cData.glip, open: 0, closed: 0 };;
+                    openSet.push(grid[index]);
+                }
+                else
+                {           
+                    gcosty = SC_AI_PathFind_Mining_NodeDistance_1.checkNodeDistance(cData.lsp, { x: roundedX, y: roundedY });
+                    hcosty = SC_AI_PathFind_Mining_NodeDistance_1.checkNodeDistance(cData.ltp, { x: roundedX, y: roundedY });
+                    fcosty = gcosty + hcosty;
+
+                    grid[index] = { boolWalk: boolWalker, worldPosition: { x: roundedX, y: roundedY }, gcost: gcosty, hcost: hcosty, fcost: fcosty, gridTileX: x, gridTileY: y, index: index, parent: parenter, gridIndex: indexOfGrid, gridPos: cData.glip, open: 0, closed: 0 };
+                }
+            }
+        }
+
+        return { grid: grid, openSet: openSet};
+    }
+};
