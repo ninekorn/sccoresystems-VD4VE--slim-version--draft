@@ -10,7 +10,7 @@ play your last recorded sound with pressing the keyboard key P
 
 directX rendering deactivated for the console. VR is removed and all physics objects removed but i will try and readd the spectrum visualizer soon as an overlay. 
 
-To be tried with the Void Expanse draft for the 9sMODs Invasion series: 
+To be tried with my 9sMods series in the game Void Expanse: 
 
 https://drive.google.com/file/d/1VefBUM3YC4zeJGGVyN_aS5DzZYOJneAH/view?usp=sharing
 
